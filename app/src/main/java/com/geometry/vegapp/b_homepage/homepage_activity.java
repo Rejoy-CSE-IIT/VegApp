@@ -4,14 +4,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.geometry.vegapp.R;
 import com.geometry.vegapp.h_login.login_activity;
-import com.geometry.vegapp.j_project_core.a_main_selector.aa_ai_OptionSelector_MainWindow;
 
 public class homepage_activity extends AppCompatActivity
 {
@@ -39,6 +37,12 @@ public class homepage_activity extends AppCompatActivity
         setContentView(R.layout.activity_aa_ab_vegmain);
 
 
+        userinfo   = (TextView) findViewById(R.id.userinfo);
+        startButton_xml   = (Button)   findViewById(R.id.startButton_xml);
+
+
+
+
 
 
     }
@@ -58,43 +62,16 @@ public class homepage_activity extends AppCompatActivity
             Intent intent = new Intent(homepage_activity.this, login_activity.class);
             startActivity(intent);
             finish();
-
-
-
         }
 
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
+        email = intent.getStringExtra("email");
+        user_mode_S = intent.getStringExtra("user_mode");
 
-        userinfo   = (TextView) findViewById(R.id.userinfo);
-
-
-
-        startButton_xml   = (Button)   findViewById(R.id.startButton_xml);
-
-
-        startButton_xml.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-
-                Intent intent = new Intent(homepage_activity.this, aa_ai_OptionSelector_MainWindow.class);
-                startActivity(intent);
-                 finish();
-            }
-        });
-
-
-
-
-
-              Intent intent = getIntent();
-              name = intent.getStringExtra("name");
-              email = intent.getStringExtra("email");
-              user_mode_S = intent.getStringExtra("user_mode");
-
-              id   = intent.getIntExtra("Id",0);
-              homepage_activity.user_id = id;
-              homepage_activity.user_mode = user_mode_S;
+        id   = intent.getIntExtra("Id",0);
+        homepage_activity.user_id = id;
+        homepage_activity.user_mode = user_mode_S;
 
 
         if(homepage_activity.TESTING_MODE)

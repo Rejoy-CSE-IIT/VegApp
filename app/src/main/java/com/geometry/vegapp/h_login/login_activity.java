@@ -39,38 +39,27 @@ public class login_activity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aa_ac_login);
+
+
         login_label = (TextView) findViewById(R.id.login_label);
         signup_text = (TextView) findViewById(R.id.sign_up);
-        button = (Button) findViewById(R.id.login_button);
-        email = (EditText) findViewById(R.id.email_id);
-        password = (EditText) findViewById(R.id.password);
-
-
-        //This is for checking h_login in call after registration success
-        Intent intent = getIntent();
-
-        if (intent.hasExtra("fromReg"))
-        {
-            if (intent.getExtras().getBoolean("fromReg"))
-            {
-                login_label.setText("Registration Successful");
-            }
-
-        }
-
+        button      = (Button) findViewById(R.id.login_button);
+        email       = (EditText) findViewById(R.id.email_id);
+        password    = (EditText) findViewById(R.id.password);
 
         signup_text.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                  if(homepage_activity.TESTING_MODE)
-                      helperFunctions_class.showToast(login_activity.this,"Move to Register");
+                if(homepage_activity.TESTING_MODE)
+                    helperFunctions_class.showToast(login_activity.this,"Move to Register");
                 Intent intent = new Intent(login_activity.this, register_activity.class);
-                 startActivity(intent);
+                startActivity(intent);
 
             }
         });
+
 
         button.setOnClickListener(new View.OnClickListener()
         {
@@ -89,7 +78,7 @@ public class login_activity extends AppCompatActivity
                             {
                                 // remember response is the sring that you sent from server open php
                                 if(homepage_activity.TESTING_MODE)
-                                Toast.makeText(login_activity.this, response, Toast.LENGTH_LONG).show();
+                                    Toast.makeText(login_activity.this, response, Toast.LENGTH_LONG).show();
                                 Gson gson = new Gson();
                                 //*
                                 JsonElement element = gson.fromJson (response, JsonElement.class);
@@ -101,7 +90,7 @@ public class login_activity extends AppCompatActivity
 
                                 int id =jsonObj.get("Id").getAsInt();
                                 if(homepage_activity.TESTING_MODE)
-                                Toast.makeText(login_activity.this,  "Id is from h_login ::"+ id, Toast.LENGTH_LONG).show();
+                                    Toast.makeText(login_activity.this,  "Id is from h_login ::"+ id, Toast.LENGTH_LONG).show();
                                 //*
                                 // Toast.makeText(LoginActivity.this, result_of_login+"::"+jsObj.get("status").getAsString(), Toast.LENGTH_LONG).show();
 
@@ -121,7 +110,7 @@ public class login_activity extends AppCompatActivity
                                 }
                                 else
                                 {    if(homepage_activity.TESTING_MODE)
-                                     Toast.makeText(login_activity.this, "Login Failed", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(login_activity.this, "Login Failed", Toast.LENGTH_LONG).show();
                                     login_label.setText("Login Failed");
                                 }
                             }
@@ -150,6 +139,31 @@ public class login_activity extends AppCompatActivity
 
             }
         });//
+
+
+
+
+
+
+    }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+
+        //This is for checking h_login in call after registration success
+        Intent intent = getIntent();
+
+        if (intent.hasExtra("fromReg"))
+        {
+            if (intent.getExtras().getBoolean("fromReg"))
+            {
+                login_label.setText("Registration Successful");
+            }
+
+        }
+
 
     }
 
