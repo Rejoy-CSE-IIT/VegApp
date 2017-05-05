@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/login"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".j_project_core.b_seed_section.b_recycler_view_seed_display.a_recycler_view_seed_view_dsiplay_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/header">
+
+
+
+        <EditText
+            android:id="@+id/SearchText"
+            android:layout_width="0dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:background="@drawable/patched_button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_weight="0.80"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:text=""
+            android:layout_marginTop="10dp" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.20"
+            android:background="@drawable/button_bg_round_1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            android:layout_marginTop="10dp"
+
+            android:minHeight="?attr/actionBarSize" />
+
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/SearchTextD"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_height="wrap_content"
+        android:background="@drawable/patched_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+
+        android:inputType="text"
+        android:textSize="16sp"
+        android:text=""
+        android:layout_marginTop="10dp" />
+
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/SearchTextD"
+
+        android:layout_marginTop="14dp"
+        android:background="#d3d3d3"/>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/border"
+        android:scrollbars="vertical"
+        />
+
+</RelativeLayout>
+
+
+
+
+
+

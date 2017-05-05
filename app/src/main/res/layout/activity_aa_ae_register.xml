@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+
+    tools:context="com.geometry.vegapp.e_register.register_activity">
+
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:fillViewport="true"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registration_label"
+                android:text="Register"
+                android:textColor="@color/textColor"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/veg"
+                android:contentDescription="@null"
+
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_name"
+
+                android:id="@+id/name_reg_id_label"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/textColor"
+                android:id="@+id/name_reg_id"
+                android:hint="Enter Name Here" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_email"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+                android:id="@+id/email_reg_id_label"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/textColor"
+                android:id="@+id/email_reg_id"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Email Here"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_password"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+                android:id="@+id/pass_reg_id_label"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/textColor"
+                android:id="@+id/pass_reg_id"
+                android:inputType="textPassword"
+                android:hint="Enter Password Here"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_con_password"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+                android:id="@+id/conf_pass_reg_id_label"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/textColor"
+                android:id="@+id/con_pass_reg_id"
+                android:inputType="textPassword"
+                android:hint="Confirm  Password Here"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Mobile Number"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+                android:id="@+id/moblabel"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/textColor"
+                android:id="@+id/mobno"
+                android:hint="Enter Mobile Number Here"
+                />
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Enter Place"
+                        android:textColor="@color/textColor"
+                        android:textSize="18dp"
+                        android:id="@+id/place"
+
+                        android:layout_alignParentLeft="true"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:textColor="@color/textColor"
+                        android:id="@+id/place_ET"
+                        android:hint="Enter Place here Here"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                <Spinner
+                    android:id="@+id/spinner_opt"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:entries="@array/reg_options"
+                    android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="@string/reg_bin_label"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:id="@+id/register_button"
+
+
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_bg_round_1"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already Registered? Click here to Login"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+               android:onClick="login_form_xml"
+                android:id="@+id/sign_up"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

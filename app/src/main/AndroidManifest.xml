@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geometry.vegapp">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".a_welcomeScreen.welcome_activity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitle">
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".b_homepage.homepage_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".h_login.login_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".e_register.register_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.a_main_selector.aa_ai_OptionSelector_MainWindow"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.b_seed_section.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.c_vegetable.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_2_Fertilizers.aa_ai_2_OptionSelector_fertWindow"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_3_plant.aa_ai_3_OptionSelector_plantWindow"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_4_Training.aa_ai_4_OptionSelector_trnWindow"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_5_renewal_energey.aa_ai_5_OptionSelector_rnwWindow"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.ai_6_user_statics.aa_ai_6_OptionSelector_usrWindow"
+            android:theme="@style/AppTheme.NoTitle" />
+
+        <activity
+            android:name=".j_project_core.b_seed_section.c_recycler_view_seed_entry.seedformEntryForm"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.b_seed_section.b_recycler_view_seed_display.a_recycler_view_seed_view_dsiplay_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.b_seed_section.d_recycler_view_seed_item_view.viewSeed"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.c_vegetable.c_recycler_view_veg_entry.vegformEntryForm"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.c_vegetable.b_recycler_view_veg_display.a_recycler_view_veg_view_display_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.c_vegetable.d_recycler_view_veg_item_view.viewVeg"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_2_Fertilizers.a_2_fertilizers_Level_0.a1_recycler_view_details.viewfert"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_2_Fertilizers.a_2_fertilizers_Level_0.a1_recycler_view_details.OptionSelector_fert_view"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_2_Fertilizers.a_2_fertilizers_Level_0.a_0_fertformEntryForm"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_4_Training.a_4_Traning_level_0.a1_recylerviewdetails.OptionSelector_train_view"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_4_Training.a_4_Traning_level_0.a1_recylerviewdetails.viewTrain"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_4_Training.a_0_trainformEntryForm"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_3_plant.a_3_plant_level_0.a1_recylerviewdetails.OptionSelector_plant_view"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_3_plant.a_3_plant_level_0.a1_recylerviewdetails.viewplant"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_3_plant.a_3_plant_level_0.a_0_plantformEntryForm"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_5_renewal_energey.a_5_renewal_level_0.a1_recylerviewdetails.OptionSelector_renewal_view"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_5_renewal_energey.a_5_renewal_level_0.a1_recylerviewdetails.viewrenewal"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".j_project_core.zzDummy.zai_5_renewal_energey.a_0_renewalformEntryForm"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity android:name=".TestFile.MainActivity"></activity>
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

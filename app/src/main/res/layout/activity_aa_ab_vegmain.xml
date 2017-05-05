@@ -1,0 +1,51 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_home"
+    android:padding="64dp"
+    tools:context=".b_homepage.homepage_activity">
+
+
+    <TextView
+        android:id="@+id/userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_bg_round_0"
+
+        android:fontFamily="cursive"
+        android:gravity="center_vertical"
+        android:hint="Welcome username \n in admin Mode"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <Button
+            android:id="@+id/startButton_xml"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+
+            android:background="@drawable/start"
+            android:padding="15dp"
+
+
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
