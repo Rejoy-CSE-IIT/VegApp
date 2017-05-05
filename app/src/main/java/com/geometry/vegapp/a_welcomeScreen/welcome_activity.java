@@ -116,4 +116,10 @@ public class welcome_activity extends AppCompatActivity
         }).start();
 
     }
+    @Override
+    public void onBackPressed()
+    {
+
+        //thats it
+    }
 }

@@ -132,6 +132,7 @@
                     android:onClick="login_form_xml"
                     android:background="@drawable/patched_button"
                     android:id="@+id/sign_up"
+
                     android:layout_marginTop="25dp"
                     />
 

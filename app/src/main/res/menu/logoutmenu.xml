@@ -5,6 +5,7 @@
     <item
         android:id="@+id/logout"
         android:title="logout"
+        android:background="@drawable/button_bg_round_1"
         android:icon="@drawable/logout"
         app:showAsAction="ifRoom">
     </item>

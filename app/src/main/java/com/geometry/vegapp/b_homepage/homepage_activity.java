@@ -4,11 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.geometry.vegapp.R;
+import com.geometry.vegapp.d_projectCore.aa_mainWindow.aa_ai_OptionSelector_MainWindow_activity;
 import com.geometry.vegapp.h_login.login_activity;
 
 public class homepage_activity extends AppCompatActivity
@@ -39,6 +41,19 @@ public class homepage_activity extends AppCompatActivity
 
         userinfo   = (TextView) findViewById(R.id.userinfo);
         startButton_xml   = (Button)   findViewById(R.id.startButton_xml);
+
+
+        startButton_xml.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+
+                Intent intent = new Intent(homepage_activity.this, aa_ai_OptionSelector_MainWindow_activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
 
@@ -87,7 +102,12 @@ public class homepage_activity extends AppCompatActivity
 
 
 
+    @Override
+    public void onBackPressed()
+    {
 
+        //thats it
+    }
 
 
 
