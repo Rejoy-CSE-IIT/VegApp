@@ -5,7 +5,7 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".j_project_core.b_seed_section.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity">
+    tools:context=".d_projectCore.ab_seed.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity">
 
 
     <android.support.v7.widget.Toolbar

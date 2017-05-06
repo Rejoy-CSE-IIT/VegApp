@@ -7,19 +7,31 @@ package com.geometry.vegapp.f_webPageLinks;
 
 public class webPageLinks_class
 {
-  /*
+
 
     public static String Register_URL = "http://192.168.0.102/php_secure_Code/ServerFiles/aa_register.php";
     public static String Login_URL    = "http://192.168.0.102/php_secure_Code/ServerFiles/ab_login.Veg.php";
-*/
+
+    public static String seedView_URL                 = "http://192.168.0.102/php_secure_Code/ServerFiles/seed/ae_register_seed_view_VegP.php";
+    public static String Seed_Register_URL            = "http://192.168.0.102/php_secure_Code/ServerFiles/seed/ae_register_seed_entry.VegP.php";
+    public static String rating_seed_Register_URL     = "http://192.168.0.102/php_secure_Code/ServerFiles/seed/ae_seed_rating_approval.php";
+    public static  String Approval_Seed_URL           = "http://192.168.0.102/php_secure_Code/ServerFiles/seed/ae_seed_approval.php";
+    public static  String Delete_Seed_URL             = "http://192.168.0.102/php_secure_Code/ServerFiles/seed/ae_delete_seed.php";
 
 
+
+/*
 
     public static String Register_URL = "http://192.168.56.1/php_secure_Code/ServerFiles/aa_register.php";
     public static String Login_URL    = "http://192.168.56.1/php_secure_Code/ServerFiles/ab_login.Veg.php";
 
+    public static String seedView_URL                 = "http://192.168.56.1/php_secure_Code/ServerFiles/seed/ae_register_seed_view_VegP.php";
+    public static String Seed_Register_URL            = "http://192.168.56.1/php_secure_Code/ServerFiles/seed/ae_register_seed_entry.VegP.php";
+    public static String rating_seed_Register_URL     = "http://192.168.56.1/php_secure_Code/ServerFiles/seed/ae_seed_rating_approval.php";
+    public static  String Approval_Seed_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/seed/ae_seed_approval.php";
+    public static  String Delete_Seed_URL             = "http://192.168.56.1/php_secure_Code/ServerFiles/seed/ae_delete_seed.php";
 
-    public static String seedView_URL     =  "http://192.168.56.1/php_secure_Code/ae_register_seed_view_VegP.php";
+*/
     public static String VegView_URL     =  "http://192.168.56.1/php_secure_Code/ae_register_veg_view_VegP.php";
     public static String fertView_URL    = "http://192.168.56.1/php_secure_Code/ae_register_fert_view_VegP.php";
     public static String plantView_URL   = "http://192.168.56.1/php_secure_Code/ae_register_plant_view_VegP.php";
@@ -27,7 +39,6 @@ public class webPageLinks_class
     public static String renewalView_URL = "http://192.168.56.1/php_secure_Code/ae_register_renewal_view_VegP.php";
 
 
-    public static String Seed_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_seed_entry.VegP.php";
     public static String Veg_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_veg_entry.VegP.php";
     public static String fert_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_fert_entry.VegP.php";
     public static String plant_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_plant_entry.VegP.php";
@@ -42,7 +53,6 @@ public class webPageLinks_class
         webPageLinks_class.rating_seed_Register_URL = rating_seed_Register_URL;
     }
 
-    public static String rating_seed_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_seed_rating_approval.php";
 
     public static String getRating_veg_Register_URL() {
         return rating_veg_Register_URL;
@@ -96,7 +106,6 @@ public class webPageLinks_class
 
 
 
-    public static  String Approval_Seed_URL = "http://192.168.56.1/php_secure_Code/ae_seed_approval.php";
 
     public static void setRegister_URL(String register_URL) {
         Register_URL = register_URL;
@@ -261,8 +270,7 @@ public class webPageLinks_class
      public static  String Approval_renewal_URL = "http://192.168.56.1/php_secure_Code/ae_renewal_approval.php";
 
 
-    public static  String Delete_Seed_URL = "http://192.168.56.1/php_secure_Code/ae_delete_seed.php";
-    public static  String Delete_veg_URL = "http://192.168.56.1/php_secure_Code/ae_delete_veg.php";
+      public static  String Delete_veg_URL = "http://192.168.56.1/php_secure_Code/ae_delete_veg.php";
     public static  String Delete_fert_URL = "http://192.168.56.1/php_secure_Code/ae_delete_fert.php";
     public static  String Delete_plant_URL = "http://192.168.56.1/php_secure_Code/ae_delete_plant.php";
     public static  String Delete_train_URL = "http://192.168.56.1/php_secure_Code/ae_delete_train.php";

@@ -37,7 +37,14 @@
         <activity
             android:name=".d_projectCore.aa_mainWindow.aa_ai_OptionSelector_MainWindow_activity"
             android:theme="@style/AppTheme.NoTitle" />
-        <activity android:name=".d_projectCore.ab_seed.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity"
+        <activity
+            android:name=".d_projectCore.ab_seed.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity android:name=".d_projectCore.ab_seed.d_recycler_view_seed_item_view.viewSeed"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity android:name=".d_projectCore.ab_seed.c_recycler_view_seed_entry.seedformEntryForm"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity android:name=".d_projectCore.ab_seed.b_recycler_view_seed_display.a_recycler_view_seed_view_dsiplay_activity"
             android:theme="@style/AppTheme.NoTitle"/>
     </application>
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login"
-    tools:context=".j_project_core.b_seed_section.d_recycler_view_seed_item_view.viewSeed">
+    tools:context=".d_projectCore.ab_seed.d_recycler_view_seed_item_view.viewSeed">
 
     <ScrollView
         android:layout_width="match_parent"

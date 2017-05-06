@@ -17,6 +17,8 @@ import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
+import com.geometry.vegapp.d_projectCore.ab_seed.b_recycler_view_seed_display.a_recycler_view_seed_view_dsiplay_activity;
+import com.geometry.vegapp.d_projectCore.ab_seed.c_recycler_view_seed_entry.seedformEntryForm;
 import com.geometry.vegapp.h_login.login_activity;
 
 import java.util.ArrayList;
@@ -84,7 +86,7 @@ public class a_recycler_view_seed_options_display_activity extends AppCompatActi
 
 
 
-/*
+
                         // new String(homepage_activity.user_mode).equals("test")
                         if(new String(homepage_activity.user_mode).equals("user"))
                         {
@@ -98,14 +100,14 @@ public class a_recycler_view_seed_options_display_activity extends AppCompatActi
 
 
 
-                        }*/
+                        }
                         break;
 
                     case "View Seed List":
                         // helperFunctions_class.showToast(a_recycler_view_fert_options_display_activity.this, "Recycle search");
-/*
+
                         Intent  intent = new Intent(a_recycler_view_seed_options_display_activity.this,  a_recycler_view_seed_view_dsiplay_activity.class);
-                        startActivity(intent);*/
+                        startActivity(intent);
                         break;
 
 
