@@ -34,8 +34,10 @@
         <activity
             android:name=".e_register.register_activity"
             android:theme="@style/AppTheme.NoTitle" />
-
-        <activity android:name=".d_projectCore.aa_mainWindow.aa_ai_OptionSelector_MainWindow_activity"
+        <activity
+            android:name=".d_projectCore.aa_mainWindow.aa_ai_OptionSelector_MainWindow_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity android:name=".d_projectCore.ab_seed.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity"
             android:theme="@style/AppTheme.NoTitle"/>
     </application>
 
