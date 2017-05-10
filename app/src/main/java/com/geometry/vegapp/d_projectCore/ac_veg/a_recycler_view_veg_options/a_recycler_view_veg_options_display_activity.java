@@ -17,6 +17,7 @@ import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
+import com.geometry.vegapp.d_projectCore.ac_veg.b_recycler_view_veg_display.a_recycler_view_veg_view_display_activity;
 import com.geometry.vegapp.d_projectCore.ac_veg.c_recycler_view_veg_entry.vegformEntryForm;
 import com.geometry.vegapp.h_login.login_activity;
 
@@ -109,8 +110,8 @@ public class a_recycler_view_veg_options_display_activity extends AppCompatActiv
                     case "View veg List":
                           helperFunctions_class.showToast(a_recycler_view_veg_options_display_activity.this, "Clciked View Veg");
 
-                    /*    Intent  intent = new Intent(a_recycler_view_veg_options_display_activity.this,  a_recycler_view_veg_view_display_activity.class);
-                        startActivity(intent);*/
+                       Intent  intent = new Intent(a_recycler_view_veg_options_display_activity.this,  a_recycler_view_veg_view_display_activity.class);
+                        startActivity(intent);
                         break;
 
 

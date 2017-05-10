@@ -52,8 +52,14 @@
         <activity
             android:name=".d_projectCore.ac_veg.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity"
             android:theme="@style/AppTheme.NoTitle" />
-        <activity android:name=".d_projectCore.ac_veg.c_recycler_view_veg_entry.vegformEntryForm"
+        <activity
+            android:name=".d_projectCore.ac_veg.c_recycler_view_veg_entry.vegformEntryForm"
             android:theme="@style/AppTheme.NoTitle" />
+        <activity
+            android:name=".d_projectCore.ac_veg.b_recycler_view_veg_display.a_recycler_view_veg_view_display_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity android:name=".d_projectCore.ac_veg.d_veg_item_view.viewVeg"
+            android:theme="@style/AppTheme.NoTitle"/>
     </application>
 
 </manifest>

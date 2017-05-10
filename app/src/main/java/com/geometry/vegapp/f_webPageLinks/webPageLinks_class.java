@@ -32,15 +32,23 @@ public class webPageLinks_class
     public static  String Delete_Seed_URL             = "http://192.168.56.1/php_secure_Code/ServerFiles/seed/ae_delete_seed.php";
 
 
-    public static String VegView_URL     =  "http://192.168.56.1/php_secure_Code/ae_register_veg_view_VegP.php";
+
+    public static String Veg_Register_URL            = "http://192.168.56.1/php_secure_Code/ServerFiles/veg/ae_register_veg_entry.VegP.php";
+    public static String VegView_URL                 = "http://192.168.56.1/php_secure_Code/ServerFiles/veg/ae_register_veg_view_VegP.php";
+    public static String rating_veg_Register_URL     = "http://192.168.56.1/php_secure_Code/ServerFiles/veg/ae_veg_rating_approval.php";
+    public static  String Approval_veg_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/veg/ae_veg_approval.php";
+    public static  String Delete_veg_URL             = "http://192.168.56.1/php_secure_Code/ServerFiles/veg/ae_delete_veg.php";
+
+
+
+
     public static String fertView_URL    = "http://192.168.56.1/php_secure_Code/ae_register_fert_view_VegP.php";
     public static String plantView_URL   = "http://192.168.56.1/php_secure_Code/ae_register_plant_view_VegP.php";
     public static String trainView_URL   = "http://192.168.56.1/php_secure_Code/ae_register_train_view_VegP.php";
     public static String renewalView_URL = "http://192.168.56.1/php_secure_Code/ae_register_renewal_view_VegP.php";
 
 
-    public static String Veg_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_veg_entry.VegP.php";
-    public static String fert_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_fert_entry.VegP.php";
+     public static String fert_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_fert_entry.VegP.php";
     public static String plant_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_plant_entry.VegP.php";
     public static String train_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_train_entry.VegP.php";
     public static String renewal_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_renewal_entry.VegP.php";
@@ -94,7 +102,6 @@ public class webPageLinks_class
         webPageLinks_class.rating_train_Register_URL = rating_train_Register_URL;
     }
 
-    public static String rating_veg_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_veg_rating_approval.php";
     public static String rating_fert_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_fert_rating_approval.php";
 
     public static String rating_plant_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_plant_rating_approval.php";
@@ -263,15 +270,11 @@ public class webPageLinks_class
         Delete_renewal_URL = delete_renewal_URL;
     }
 
-    public static  String Approval_veg_URL = "http://192.168.56.1/php_secure_Code/ae_veg_approval.php";
-    public static  String Approval_fert_URL = "http://192.168.56.1/php_secure_Code/ae_fert_approval.php";
+      public static  String Approval_fert_URL = "http://192.168.56.1/php_secure_Code/ae_fert_approval.php";
     public static  String Approval_plant_URL = "http://192.168.56.1/php_secure_Code/ae_plant_approval.php";
     public static  String Approval_train_URL = "http://192.168.56.1/php_secure_Code/ae_train_approval.php";
      public static  String Approval_renewal_URL = "http://192.168.56.1/php_secure_Code/ae_renewal_approval.php";
-
-
-      public static  String Delete_veg_URL = "http://192.168.56.1/php_secure_Code/ae_delete_veg.php";
-    public static  String Delete_fert_URL = "http://192.168.56.1/php_secure_Code/ae_delete_fert.php";
+       public static  String Delete_fert_URL = "http://192.168.56.1/php_secure_Code/ae_delete_fert.php";
     public static  String Delete_plant_URL = "http://192.168.56.1/php_secure_Code/ae_delete_plant.php";
     public static  String Delete_train_URL = "http://192.168.56.1/php_secure_Code/ae_delete_train.php";
     public static  String Delete_renewal_URL = "http://192.168.56.1/php_secure_Code/ae_delete_renewal.php";
