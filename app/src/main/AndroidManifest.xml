@@ -49,7 +49,10 @@
         <activity
             android:name=".d_projectCore.ab_seed.b_recycler_view_seed_display.a_recycler_view_seed_view_dsiplay_activity"
             android:theme="@style/AppTheme.NoTitle" />
-        <activity android:name=".d_projectCore.ac_veg.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity"
+        <activity
+            android:name=".d_projectCore.ac_veg.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity android:name=".d_projectCore.ac_veg.c_recycler_view_veg_entry.vegformEntryForm"
             android:theme="@style/AppTheme.NoTitle" />
     </application>
 

@@ -4,9 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/vegback"
 
-    tools:context=".j_project_core.c_vegetable.c_recycler_view_veg_entry.vegformEntryForm">
+    tools:context=".d_projectCore.ac_veg.c_recycler_view_veg_entry.vegformEntryForm">
 
 
 
@@ -31,23 +31,22 @@
 
 
             <TextView
+                android:id="@+id/seedlabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Veg Entry Form"
-                android:textColor="@color/textColor"
-                android:id="@+id/seedlabel"
-
-                android:textSize="30dp"
-                android:gravity="center"
                 android:layout_marginTop="30dp"
-                android:textStyle="bold"
-                />
+                android:gravity="center"
+
+                android:text="Veg Entry Form"
+                android:textColor="@color/buttonColor"
+                android:textSize="30dp"
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Farm"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
 
                 android:id="@+id/organization_label"
@@ -66,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Price per Kg"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/price_label"
                 android:layout_alignParentLeft="true"
@@ -87,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Category"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/category_label"
                 android:layout_alignParentLeft="true"
@@ -107,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Details"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/details_label"
                 android:layout_alignParentLeft="true"
@@ -129,7 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Place"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/place"
                 android:layout_alignParentLeft="true"
@@ -152,7 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="mobile no"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/mobno"
                 android:layout_alignParentLeft="true"
@@ -174,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="contacts"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/contacts"
                 android:layout_alignParentLeft="true"
@@ -191,7 +190,7 @@
                 android:hint="Enter contacts   here"
                 />
 
-            <com.geometry.vegapp.d_ImageProcessing.PinchZoomImageView_class
+            <com.geometry.vegapp.i_ImageProcessing.PinchZoomImageView_class
                 android:id="@+id/image_select_from_galley_img"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/alert_dark_frame"
@@ -201,7 +200,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
                 >
-            </com.geometry.vegapp.d_ImageProcessing.PinchZoomImageView_class>
+            </com.geometry.vegapp.i_ImageProcessing.PinchZoomImageView_class>
 
 
 

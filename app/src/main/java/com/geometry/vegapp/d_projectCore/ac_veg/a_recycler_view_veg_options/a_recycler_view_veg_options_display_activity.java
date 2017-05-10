@@ -17,6 +17,7 @@ import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
+import com.geometry.vegapp.d_projectCore.ac_veg.c_recycler_view_veg_entry.vegformEntryForm;
 import com.geometry.vegapp.h_login.login_activity;
 
 import java.util.ArrayList;
@@ -92,9 +93,9 @@ public class a_recycler_view_veg_options_display_activity extends AppCompatActiv
                         }
                         else
                         {
-                           /*
+
                             Intent intent = new Intent(a_recycler_view_veg_options_display_activity.this, vegformEntryForm.class);
-                            startActivity(intent);*/
+                            startActivity(intent);
 
 
 
