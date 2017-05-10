@@ -1,4 +1,4 @@
-package com.geometry.vegapp.d_projectCore.ac_veg.c_recycler_view_veg_entry;
+package com.geometry.vegapp.d_projectCore.ad_fertilizer.c_recycler_view_fert_entry;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -25,7 +25,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
-import com.geometry.vegapp.d_projectCore.ac_veg.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity;
+import com.geometry.vegapp.d_projectCore.ab_seed.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity;
 import com.geometry.vegapp.f_webPageLinks.webPageLinks_class;
 import com.geometry.vegapp.g_volley_manager.volley_connection_class;
 import com.geometry.vegapp.h_login.login_activity;
@@ -42,7 +42,7 @@ import java.util.Map;
 import id.zelory.compressor.Compressor;
 import id.zelory.compressor.FileUtil;
 
-public class vegformEntryForm extends AppCompatActivity
+public class fertformEntryForm extends AppCompatActivity
 {
 
     PinchZoomImageView_class mPinchZoomImageViewClass;
@@ -70,7 +70,7 @@ public class vegformEntryForm extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a_0_vegform_entry_form);
+        setContentView(R.layout.activity_a_0_fertform_entry_form);
 
 
         organization_ET    = (EditText)findViewById(R.id.organization_ET);
@@ -117,7 +117,7 @@ public class vegformEntryForm extends AppCompatActivity
                         details_ET.getText().toString().equals(""))
 
                 {
-                    builder=new AlertDialog.Builder(vegformEntryForm.this);
+                    builder=new AlertDialog.Builder(fertformEntryForm.this);
                     builder.setTitle("Something went wrong....");
                     builder.setMessage("please fill all the fields..");
 
@@ -151,7 +151,7 @@ public class vegformEntryForm extends AppCompatActivity
 
                                     // remember response is the sring that you sent from server open php
                                     if(homepage_activity.TESTING_MODE)
-                                        Toast.makeText(vegformEntryForm.this, response, Toast.LENGTH_LONG).show();
+                                        Toast.makeText(fertformEntryForm.this, response, Toast.LENGTH_LONG).show();
 
                                     Gson gson = new Gson();
                                     //*
@@ -165,10 +165,10 @@ public class vegformEntryForm extends AppCompatActivity
 
 
                                         //  if(homepage_activity.TESTING_MODE)
-                                        Toast.makeText(vegformEntryForm.this, "Seed Registration Successful!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(fertformEntryForm.this, "Seed Registration Successful!", Toast.LENGTH_LONG).show();
 
 
-                                        Intent intent = new Intent(vegformEntryForm.this, a_recycler_view_veg_options_display_activity.class);
+                                        Intent intent = new Intent(fertformEntryForm.this, a_recycler_view_seed_options_display_activity.class);
                                         startActivity(intent);
                                         finish();
 
@@ -188,7 +188,7 @@ public class vegformEntryForm extends AppCompatActivity
                             {
                                 @Override
                                 public void onErrorResponse(VolleyError error) {
-                                    Toast.makeText(vegformEntryForm.this,error.toString(),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(fertformEntryForm.this,error.toString(),Toast.LENGTH_LONG).show();
                                 }
                             }){
                         @Override
@@ -279,7 +279,7 @@ public class vegformEntryForm extends AppCompatActivity
                     try
                     {
                         File actualImage;
-                        actualImage = FileUtil.from(vegformEntryForm.this, mImageUri);
+                        actualImage = FileUtil.from(fertformEntryForm.this, mImageUri);
                         bitmap_P = Compressor.getDefault(this).compressToBitmap(actualImage);
                     }
                     catch (Exception e)
@@ -342,10 +342,10 @@ public class vegformEntryForm extends AppCompatActivity
 
                 if(homepage_activity.TESTING_MODE)
                 {
-                    helperFunctions_class.showToast(vegformEntryForm.this, "Inside Login Function");
+                    helperFunctions_class.showToast(fertformEntryForm.this, "Inside Login Function");
                 }
-                helperFunctions_class.logOut_reset_flags(vegformEntryForm.this);
-                Intent intent = new Intent(vegformEntryForm.this, login_activity.class);
+                helperFunctions_class.logOut_reset_flags(fertformEntryForm.this);
+                Intent intent = new Intent(fertformEntryForm.this, login_activity.class);
                 startActivity(intent);
                 finish();
 

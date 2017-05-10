@@ -269,9 +269,9 @@ public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
         return m.find();
     }
     @Override
-    public void onStart()
+    public void onResume()
     {
-        super.onStart();
+        super.onResume();
 
         getDataFromServer();
 

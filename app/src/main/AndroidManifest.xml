@@ -60,6 +60,14 @@
             android:theme="@style/AppTheme.NoTitle" />
         <activity android:name=".d_projectCore.ac_veg.d_veg_item_view.viewVeg"
             android:theme="@style/AppTheme.NoTitle"/>
+        <activity android:name=".d_projectCore.ad_fertilizer.a_recycler_view_fert_options.a_recycler_view_fert_options_display_activity"
+            android:theme="@style/AppTheme.NoTitle"/>
+
+        <activity android:name=".d_projectCore.ad_fertilizer.c_recycler_view_fert_entry.fertformEntryForm"
+            android:theme="@style/AppTheme.NoTitle"/>
+        <activity android:name=".d_projectCore.ad_fertilizer.b_recycler_view_fert_display.a_recycler_view_fert_view_display_activity"
+            android:theme="@style/AppTheme.NoTitle"/>
+
     </application>
 
 </manifest>

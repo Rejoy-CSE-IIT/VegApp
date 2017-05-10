@@ -4,9 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/fert_back"
 
-    tools:context=".j_project_core.b_seed_section.c_recycler_view_seed_entry.seedformEntryForm">
+    tools:context=".d_projectCore.ad_fertilizer.c_recycler_view_fert_entry.fertformEntryForm">
 
 
 
@@ -33,8 +33,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#FFFFEE"
                 android:text=" Fertilizer Entry Form"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:id="@+id/seedlabel"
 
                 android:textSize="30dp"
@@ -43,11 +44,12 @@
                 android:textStyle="bold"
                 />
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Agency"
-                android:textColor="@color/textColor"
+                android:background="#FFFFEE"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
 
                 android:id="@+id/organization_label"
@@ -63,10 +65,11 @@
                 android:hint="Enter Agency name  here" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Price per Kg"
-                android:textColor="@color/textColor"
+                android:background="#FFFFEE"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/price_label"
                 android:layout_alignParentLeft="true"
@@ -84,10 +87,11 @@
                 />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Category"
-                android:textColor="@color/textColor"
+                android:background="#FFFFEE"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/category_label"
                 android:layout_alignParentLeft="true"
@@ -104,11 +108,12 @@
                 android:hint="Enter Category Here"
                 />
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Details"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
+                android:background="#FFFFEE"
                 android:id="@+id/details_label"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
@@ -126,10 +131,11 @@
 
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Place"
-                android:textColor="@color/textColor"
+                android:background="#FFFFEE"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/place"
                 android:layout_alignParentLeft="true"
@@ -149,12 +155,13 @@
 
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="mobile no"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
                 android:id="@+id/mobno"
+                android:background="#FFFFEE"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
 
@@ -171,11 +178,12 @@
 
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="contacts"
-                android:textColor="@color/textColor"
+                android:textColor="@color/buttonColor"
                 android:textSize="18dp"
+                android:background="#FFFFEE"
                 android:id="@+id/contacts"
                 android:layout_alignParentLeft="true"
                 android:textStyle="bold"
@@ -191,7 +199,7 @@
                 android:hint="Enter contacts   here"
                 />
 
-            <com.geometry.vegapp.d_ImageProcessing.PinchZoomImageView_class
+            <com.geometry.vegapp.i_ImageProcessing.PinchZoomImageView_class
                 android:id="@+id/image_select_from_galley_img"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/alert_dark_frame"
@@ -201,7 +209,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
                 >
-            </com.geometry.vegapp.d_ImageProcessing.PinchZoomImageView_class>
+            </com.geometry.vegapp.i_ImageProcessing.PinchZoomImageView_class>
 
 
 
