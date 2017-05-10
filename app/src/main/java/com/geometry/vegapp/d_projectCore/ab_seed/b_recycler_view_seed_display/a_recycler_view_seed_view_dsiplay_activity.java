@@ -25,7 +25,7 @@ import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
-import com.geometry.vegapp.d_projectCore.ab_seed.d_recycler_view_seed_item_view.viewSeed;
+import com.geometry.vegapp.d_projectCore.ab_seed.d_seed_item_view.viewSeed;
 import com.geometry.vegapp.f_webPageLinks.webPageLinks_class;
 import com.geometry.vegapp.g_volley_manager.volley_connection_class;
 import com.geometry.vegapp.h_login.login_activity;

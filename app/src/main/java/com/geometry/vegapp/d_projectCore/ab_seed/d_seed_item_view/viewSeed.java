@@ -1,4 +1,4 @@
-package com.geometry.vegapp.d_projectCore.ab_seed.d_recycler_view_seed_item_view;
+package com.geometry.vegapp.d_projectCore.ab_seed.d_seed_item_view;
 
 import android.Manifest;
 import android.content.Intent;

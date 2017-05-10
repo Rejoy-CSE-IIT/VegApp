@@ -1,11 +1,11 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/login"
+    android:background="@drawable/vegback"
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".j_project_core.c_vegetable.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity">
+    tools:context=".d_projectCore.ac_veg.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity">
 
 
     <android.support.v7.widget.Toolbar

@@ -19,6 +19,7 @@ import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
 import com.geometry.vegapp.d_projectCore.ab_seed.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity;
+import com.geometry.vegapp.d_projectCore.ac_veg.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity;
 import com.geometry.vegapp.h_login.login_activity;
 
 import java.util.ArrayList;
@@ -98,9 +99,9 @@ public class aa_ai_OptionSelector_MainWindow_activity extends AppCompatActivity
                             Toast.makeText(aa_ai_OptionSelector_MainWindow_activity.this, "Inside tester"+dataE.getOptionName(), Toast.LENGTH_LONG).show();
 
 
-/*
+
                         intent = new Intent(aa_ai_OptionSelector_MainWindow_activity.this, a_recycler_view_veg_options_display_activity.class);
-                        startActivity(intent);*/
+                        startActivity(intent);
                         break;
 
 

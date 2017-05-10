@@ -8,7 +8,7 @@ package com.geometry.vegapp.f_webPageLinks;
 public class webPageLinks_class
 {
 
-
+/*
     public static String Register_URL = "http://192.168.0.102/php_secure_Code/ServerFiles/aa_register.php";
     public static String Login_URL    = "http://192.168.0.102/php_secure_Code/ServerFiles/ab_login.Veg.php";
 
@@ -18,9 +18,9 @@ public class webPageLinks_class
     public static  String Approval_Seed_URL           = "http://192.168.0.102/php_secure_Code/ServerFiles/seed/ae_seed_approval.php";
     public static  String Delete_Seed_URL             = "http://192.168.0.102/php_secure_Code/ServerFiles/seed/ae_delete_seed.php";
 
+*/
 
 
-/*
 
     public static String Register_URL = "http://192.168.56.1/php_secure_Code/ServerFiles/aa_register.php";
     public static String Login_URL    = "http://192.168.56.1/php_secure_Code/ServerFiles/ab_login.Veg.php";
@@ -31,7 +31,7 @@ public class webPageLinks_class
     public static  String Approval_Seed_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/seed/ae_seed_approval.php";
     public static  String Delete_Seed_URL             = "http://192.168.56.1/php_secure_Code/ServerFiles/seed/ae_delete_seed.php";
 
-*/
+
     public static String VegView_URL     =  "http://192.168.56.1/php_secure_Code/ae_register_veg_view_VegP.php";
     public static String fertView_URL    = "http://192.168.56.1/php_secure_Code/ae_register_fert_view_VegP.php";
     public static String plantView_URL   = "http://192.168.56.1/php_secure_Code/ae_register_plant_view_VegP.php";

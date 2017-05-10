@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/login"
 
-    tools:context=".d_projectCore.ab_seed.c_recycler_view_seed_entry.seedformEntryForm">
+    tools:context=".d_projectCore.ab_seed.c_seed_entry.seedformEntryForm">
 
 
 
