@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login"
-    tools:context=".j_project_core.c_vegetable.d_recycler_view_veg_item_view.viewVeg">
+    tools:context=".d_projectCore.ac_veg.d_veg_item_view.viewVeg">
 
     <ScrollView
         android:layout_width="match_parent"

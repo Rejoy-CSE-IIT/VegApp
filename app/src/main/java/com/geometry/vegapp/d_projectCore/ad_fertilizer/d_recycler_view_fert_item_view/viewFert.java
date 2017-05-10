@@ -1,4 +1,4 @@
-package com.geometry.vegapp.d_projectCore.ac_veg.d_veg_item_view;
+package com.geometry.vegapp.d_projectCore.ad_fertilizer.d_recycler_view_fert_item_view;
 
 import android.Manifest;
 import android.content.Intent;
@@ -27,7 +27,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
-import com.geometry.vegapp.d_projectCore.ac_veg.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity;
+import com.geometry.vegapp.d_projectCore.ad_fertilizer.a_recycler_view_fert_options.a_recycler_view_fert_options_display_activity;
 import com.geometry.vegapp.f_webPageLinks.webPageLinks_class;
 import com.geometry.vegapp.g_volley_manager.volley_connection_class;
 import com.google.gson.Gson;
@@ -37,7 +37,7 @@ import com.google.gson.JsonObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class viewVeg extends AppCompatActivity
+public class viewFert extends AppCompatActivity
 {
 
     ImageView mPinchZoomImageView;
@@ -64,7 +64,7 @@ public class viewVeg extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zzz_viewveg);
+        setContentView(R.layout.zzz_viewfert);
 
 
 
@@ -171,7 +171,7 @@ public class viewVeg extends AppCompatActivity
         byte[] decodedString = Base64.decode(image, Base64.DEFAULT);
         Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0,decodedString.length);
 
-        float screenWidth= helperFunctions_class.getScreenWidth(viewVeg.this );
+        float screenWidth= helperFunctions_class.getScreenWidth(viewFert.this );
 
 
         float newHeight = screenWidth;
@@ -207,7 +207,7 @@ public class viewVeg extends AppCompatActivity
 
 
 
-                StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getApproval_veg_URL(),
+                StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getApproval_fert_URL(),
                         new Response.Listener<String>()
                         {
                             @Override
@@ -226,7 +226,7 @@ public class viewVeg extends AppCompatActivity
                                 String result_of_register = jsonObj.get("status").getAsString();
                                 if(result_of_register.equals("true"))
                                 {
-                                    Toast.makeText(viewVeg.this, "Approved --+"+mobile_n0, Toast.LENGTH_LONG).show();
+                                    Toast.makeText(viewFert.this, "Approved --+"+mobile_n0, Toast.LENGTH_LONG).show();
 
                                     // // sendSMSMessage();
                                     // sendSMS();
@@ -235,9 +235,9 @@ public class viewVeg extends AppCompatActivity
                                     //  sendSMS(Integer.toString(5554) ,"Your Post has been approved by VegMarket");
 
                                     txtphoneNo=Integer.toString(mobile_n0);
-                                    message= "Your veg post is arrpoved with id "+ Integer.toString(postid);
+                                    message= "Your Fert post is arrpoved with id "+ Integer.toString(postid);
                                     sendSMSMessage();
-                                    Intent intent = new Intent(viewVeg.this, a_recycler_view_veg_options_display_activity.class);
+                                    Intent intent = new Intent(viewFert.this, a_recycler_view_fert_options_display_activity.class);
 
                                     startActivity(intent);
                                     finish();
@@ -254,7 +254,7 @@ public class viewVeg extends AppCompatActivity
                         {
                             @Override
                             public void onErrorResponse(VolleyError error) {
-                                Toast.makeText(viewVeg.this,error.toString(),Toast.LENGTH_LONG).show();
+                                Toast.makeText(viewFert.this,error.toString(),Toast.LENGTH_LONG).show();
                             }
                         }){
                     @Override
@@ -313,15 +313,15 @@ public class viewVeg extends AppCompatActivity
 
 
 
-                StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getDelete_veg_URL(),
+                StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getDelete_fert_URL(),
                         new Response.Listener<String>()
                         {
                             @Override
                             public void onResponse(String response)
                             {
                                 // remember response is the sring that you sent from server open php
-                                Toast.makeText(viewVeg.this, response, Toast.LENGTH_LONG).show();
-                                Toast.makeText(viewVeg.this, Integer.toString(userid), Toast.LENGTH_LONG).show();
+                                Toast.makeText(viewFert.this, response, Toast.LENGTH_LONG).show();
+                                Toast.makeText(viewFert.this, Integer.toString(userid), Toast.LENGTH_LONG).show();
                                 Gson gson = new Gson();
                                 //*
                                 JsonElement element = gson.fromJson (response, JsonElement.class);
@@ -331,13 +331,13 @@ public class viewVeg extends AppCompatActivity
                                 String result_of_register = jsonObj.get("status").getAsString();
                                 if(result_of_register.equals("true"))
                                 {
-                                    Toast.makeText(viewVeg.this, "deleted", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(viewFert.this, "deleted", Toast.LENGTH_LONG).show();
 
                                     // Intent intent = new Intent(fertformEntryForm.this, optionDataModel_seed.class);
                                     // intent.putExtra("fromReg", true);
                                     // startActivity(intent);
 
-                                    Intent intent = new Intent(viewVeg.this, a_recycler_view_veg_options_display_activity.class);
+                                    Intent intent = new Intent(viewFert.this, a_recycler_view_fert_options_display_activity.class);
 
                                     startActivity(intent);
                                     finish();
@@ -355,7 +355,7 @@ public class viewVeg extends AppCompatActivity
                         {
                             @Override
                             public void onErrorResponse(VolleyError error) {
-                                Toast.makeText(viewVeg.this,error.toString(),Toast.LENGTH_LONG).show();
+                                Toast.makeText(viewFert.this,error.toString(),Toast.LENGTH_LONG).show();
                             }
                         }){
                     @Override
@@ -419,7 +419,7 @@ public class viewVeg extends AppCompatActivity
 
 
 
-                StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getRating_veg_Register_URL(),
+                StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getRating_fert_Register_URL(),
                         new Response.Listener<String>()
                         {
                             @Override
@@ -438,7 +438,7 @@ public class viewVeg extends AppCompatActivity
                                 String result_of_register = jsonObj.get("status").getAsString();
                                 if(result_of_register.equals("true"))
                                 {
-                                    Toast.makeText(viewVeg.this, " rating updated", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(viewFert.this, " rating updated", Toast.LENGTH_LONG).show();
                                 }
                                 else
                                 {
@@ -452,7 +452,7 @@ public class viewVeg extends AppCompatActivity
                         {
                             @Override
                             public void onErrorResponse(VolleyError error) {
-                                Toast.makeText(viewVeg.this,error.toString(),Toast.LENGTH_LONG).show();
+                                Toast.makeText(viewFert.this,error.toString(),Toast.LENGTH_LONG).show();
                             }
                         }){
                     @Override

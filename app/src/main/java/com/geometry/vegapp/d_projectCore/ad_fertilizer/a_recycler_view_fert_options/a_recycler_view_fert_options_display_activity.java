@@ -41,7 +41,7 @@ public class a_recycler_view_fert_options_display_activity extends AppCompatActi
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aa_ai_1_optionselector_vegetablewindow);
+        setContentView(R.layout.activity_aa_ai_2_optionselector_fertwindow);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

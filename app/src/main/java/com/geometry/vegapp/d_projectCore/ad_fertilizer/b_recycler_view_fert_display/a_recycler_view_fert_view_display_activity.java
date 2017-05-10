@@ -25,6 +25,7 @@ import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
+import com.geometry.vegapp.d_projectCore.ad_fertilizer.d_recycler_view_fert_item_view.viewFert;
 import com.geometry.vegapp.f_webPageLinks.webPageLinks_class;
 import com.geometry.vegapp.g_volley_manager.volley_connection_class;
 import com.geometry.vegapp.h_login.login_activity;
@@ -83,8 +84,8 @@ public class a_recycler_view_fert_view_display_activity extends AppCompatActivit
             {
                 d_recycler_view_fert_view_datamodel_class dataE = data.get(position);
 
-/*
-                Intent intent = new Intent(a_recycler_view_fert_view_display_activity.this, viewVeg.class);
+
+                Intent intent = new Intent(a_recycler_view_fert_view_display_activity.this, viewFert.class);
 
 
 
@@ -118,7 +119,7 @@ public class a_recycler_view_fert_view_display_activity extends AppCompatActivit
 
 
 
-*/
+
 
 
 
@@ -268,9 +269,9 @@ public class a_recycler_view_fert_view_display_activity extends AppCompatActivit
         return m.find();
     }
     @Override
-    public void onStart()
+    public void onResume()
     {
-        super.onStart();
+        super.onResume();
 
         getDataFromServer();
 
@@ -281,7 +282,7 @@ public class a_recycler_view_fert_view_display_activity extends AppCompatActivit
 
     void getDataFromServer()
     {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getVegView_URL(),
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getFertView_URL(),
                 new Response.Listener<String>()
                 {
                     @Override

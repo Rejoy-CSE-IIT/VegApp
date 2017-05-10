@@ -165,7 +165,7 @@ public class vegformEntryForm extends AppCompatActivity
 
 
                                         //  if(homepage_activity.TESTING_MODE)
-                                        Toast.makeText(vegformEntryForm.this, "Seed Registration Successful!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(vegformEntryForm.this, "Veg Registration Successful!", Toast.LENGTH_LONG).show();
 
 
                                         Intent intent = new Intent(vegformEntryForm.this, a_recycler_view_veg_options_display_activity.class);
@@ -179,7 +179,7 @@ public class vegformEntryForm extends AppCompatActivity
                                     else
                                     {
                                         //Toast.makeText(Register.this, "Registration  Failed", Toast.LENGTH_LONG).show();
-                                        seed_label.setText("Seed Registration Failed Try again !!");
+                                        seed_label.setText("Veg Registration Failed Try again !!");
                                     }
                                     bitmap_P=null;
                                 }

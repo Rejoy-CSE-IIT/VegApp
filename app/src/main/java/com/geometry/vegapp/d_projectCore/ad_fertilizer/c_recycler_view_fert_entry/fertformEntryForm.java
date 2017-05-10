@@ -25,7 +25,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
-import com.geometry.vegapp.d_projectCore.ab_seed.a_recycler_view_seed_options.a_recycler_view_seed_options_display_activity;
+import com.geometry.vegapp.d_projectCore.ad_fertilizer.a_recycler_view_fert_options.a_recycler_view_fert_options_display_activity;
 import com.geometry.vegapp.f_webPageLinks.webPageLinks_class;
 import com.geometry.vegapp.g_volley_manager.volley_connection_class;
 import com.geometry.vegapp.h_login.login_activity;
@@ -141,7 +141,7 @@ public class fertformEntryForm extends AppCompatActivity
 
 
 
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getVeg_Register_URL(),
+                    StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getFert_Register_URL(),
                             new Response.Listener<String>()
                             {
                                 @Override
@@ -168,7 +168,7 @@ public class fertformEntryForm extends AppCompatActivity
                                         Toast.makeText(fertformEntryForm.this, "Seed Registration Successful!", Toast.LENGTH_LONG).show();
 
 
-                                        Intent intent = new Intent(fertformEntryForm.this, a_recycler_view_seed_options_display_activity.class);
+                                        Intent intent = new Intent(fertformEntryForm.this, a_recycler_view_fert_options_display_activity.class);
                                         startActivity(intent);
                                         finish();
 

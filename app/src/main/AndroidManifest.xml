@@ -67,6 +67,8 @@
             android:theme="@style/AppTheme.NoTitle"/>
         <activity android:name=".d_projectCore.ad_fertilizer.b_recycler_view_fert_display.a_recycler_view_fert_view_display_activity"
             android:theme="@style/AppTheme.NoTitle"/>
+        <activity android:name=".d_projectCore.ad_fertilizer.d_recycler_view_fert_item_view.viewFert"
+            android:theme="@style/AppTheme.NoTitle"/>
 
     </application>
 

@@ -41,11 +41,11 @@ public class webPageLinks_class
 
 
 
-    public static String fert_Register_URL            = "http://192.168.56.1/php_secure_Code/ServerFiles/0_fert/ae_register_fert_entry.VegP.php";
-    public static String fertView_URL                 = "http://192.168.56.1/php_secure_Code/ServerFiles/0_fert/ae_register_fert_view_VegP.php";
-    public static String rating_fert_Register_URL     = "http://192.168.56.1/php_secure_Code/ServerFiles/0_fert/ae_fert_rating_approval.php";
-    public static  String Delete_fert_URL             = "http://192.168.56.1/php_secure_Code/ServerFiles/0_fert/ae_delete_fert.php";
-    public static  String Approval_fert_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/0_fert/ae_fert_approval.php";
+    public static String fert_Register_URL            = "http://192.168.56.1/php_secure_Code/ServerFiles/aa_fert/ae_register_fert_entry.VegP.php";
+    public static String fertView_URL                 = "http://192.168.56.1/php_secure_Code/ServerFiles/aa_fert/ae_register_fert_view_VegP.php";
+    public static String rating_fert_Register_URL     = "http://192.168.56.1/php_secure_Code/ServerFiles/aa_fert/ae_fert_rating_approval.php";
+    public static  String Delete_fert_URL             = "http://192.168.56.1/php_secure_Code/ServerFiles/aa_fert/ae_delete_fert.php";
+    public static  String Approval_fert_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/aa_fert/ae_fert_approval.php";
 
 
 
