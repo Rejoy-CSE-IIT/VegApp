@@ -334,7 +334,7 @@ public class viewSeed extends AppCompatActivity
                                 {
                                     Toast.makeText(viewSeed.this, "deleted", Toast.LENGTH_LONG).show();
 
-                                    // Intent intent = new Intent(fertformEntryForm.this, optionDataModel_seed.class);
+                                    // Intent intent = new Intent(plantformEntryForm.this, optionDataModel_seed.class);
                                     // intent.putExtra("fromReg", true);
                                     // startActivity(intent);
 

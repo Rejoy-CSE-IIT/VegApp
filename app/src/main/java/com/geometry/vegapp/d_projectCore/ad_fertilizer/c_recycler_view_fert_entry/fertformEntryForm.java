@@ -165,21 +165,21 @@ public class fertformEntryForm extends AppCompatActivity
 
 
                                         //  if(homepage_activity.TESTING_MODE)
-                                        Toast.makeText(fertformEntryForm.this, "Seed Registration Successful!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(fertformEntryForm.this, "fert Registration Successful!", Toast.LENGTH_LONG).show();
 
 
                                         Intent intent = new Intent(fertformEntryForm.this, a_recycler_view_fert_options_display_activity.class);
                                         startActivity(intent);
                                         finish();
 
-                                        //Intent intent = new Intent(fertformEntryForm.this, d_recycler_view_fert_view_datamodel_class.class);
+                                        //Intent intent = new Intent(plantformEntryForm.this, d_recycler_view_fert_view_datamodel_class.class);
                                         // intent.putExtra("fromReg", true);
                                         // startActivity(intent);
                                     }
                                     else
                                     {
                                         //Toast.makeText(Register.this, "Registration  Failed", Toast.LENGTH_LONG).show();
-                                        seed_label.setText("Seed Registration Failed Try again !!");
+                                        seed_label.setText("Plant Registration Failed Try again !!");
                                     }
                                     bitmap_P=null;
                                 }
@@ -266,12 +266,12 @@ public class fertformEntryForm extends AppCompatActivity
 
                 if(mImageUri==null)
                 {
-                    // utilClass.getToast("NULL",fertformEntryForm.this);
+                    // utilClass.getToast("NULL",plantformEntryForm.this);
                 }
                 else
                 {
 
-                    //   utilClass.getToast("NOT NULL",fertformEntryForm.this);
+                    //   utilClass.getToast("NOT NULL",plantformEntryForm.this);
 
                     mPinchZoomImageViewClass.setVisibility(View.VISIBLE);
                     mPinchZoomImageViewClass.setImageUri(mImageUri, 0);

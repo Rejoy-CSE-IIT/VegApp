@@ -1,4 +1,4 @@
-package com.geometry.vegapp.d_projectCore.ad_fertilizer.a_recycler_view_fert_options;
+package com.geometry.vegapp.d_projectCore.ae_plant.a_recycler_view_plant_options;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,20 +17,19 @@ import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
-import com.geometry.vegapp.d_projectCore.ad_fertilizer.b_recycler_view_fert_display.a_recycler_view_fert_view_display_activity;
-import com.geometry.vegapp.d_projectCore.ad_fertilizer.c_recycler_view_fert_entry.fertformEntryForm;
+import com.geometry.vegapp.d_projectCore.ae_plant.c_recycler_view_plant_entry.plantformEntryForm;
 import com.geometry.vegapp.h_login.login_activity;
 
 import java.util.ArrayList;
 
-public class a_recycler_view_fert_options_display_activity extends AppCompatActivity
+public class a_recycler_view_plant_options_display_activity extends AppCompatActivity
 {
 
 
     private static RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private static RecyclerView recyclerView;
-    private static ArrayList<d_recycler_view_fert_options_datamodel_class> data;
+    private static ArrayList<d_recycler_view_plant_options_datamodel_class> data;
     static View.OnClickListener myOnClickListener;
     private static ArrayList<Integer> removedItems;
 
@@ -41,7 +40,7 @@ public class a_recycler_view_fert_options_display_activity extends AppCompatActi
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aa_ai_2_optionselector_fertwindow);
+        setContentView(R.layout.activity_aa_ai_3_optionselector_plantwindow);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -73,16 +72,16 @@ public class a_recycler_view_fert_options_display_activity extends AppCompatActi
                 // finish();
 
 
-                d_recycler_view_fert_options_datamodel_class dataE = data.get(position);
+                d_recycler_view_plant_options_datamodel_class dataE = data.get(position);
 
                 if(homepage_activity.TESTING_MODE)
-                    helperFunctions_class.showToast(a_recycler_view_fert_options_display_activity.this, dataE.getOptionName());
+                    helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, dataE.getOptionName());
 
                 //   helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, dataE.getOptionName()+":"+homepage_activity.user_mode);
 
                 switch(dataE.getOptionName())
                 {
-                    case "Post Fertilizer Details":
+                    case "Post Plant Details":
 
 
 
@@ -90,29 +89,29 @@ public class a_recycler_view_fert_options_display_activity extends AppCompatActi
                         // new String(homepage_activity.user_mode).equals("test")
                         if(new String(homepage_activity.user_mode).equals("user"))
                         {
-                            helperFunctions_class.showToast(a_recycler_view_fert_options_display_activity.this, "Sorry only vendors are allowed to post");
+                            helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, "Sorry only vendors are allowed to post");
                         }
                         else
                         {
 
-                            Intent intent = new Intent(a_recycler_view_fert_options_display_activity.this, fertformEntryForm.class);
+                            Intent intent = new Intent(a_recycler_view_plant_options_display_activity.this, plantformEntryForm.class);
                             startActivity(intent);
 
 
 
-                            helperFunctions_class.showToast(a_recycler_view_fert_options_display_activity.this, "post Veg");
+                            helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, "post Plant");
 
 
 
                         }
                         break;
 
-                    case "View Ferilizer List":
-                          helperFunctions_class.showToast(a_recycler_view_fert_options_display_activity.this, "Clciked View Veg");
-
-                    Intent  intent = new Intent(a_recycler_view_fert_options_display_activity.this,  a_recycler_view_fert_view_display_activity.class);
+                    case "View Plant List":
+                          helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, "Clciked View Veg");
+/*
+                    Intent  intent = new Intent(a_recycler_view_plant_options_display_activity.this,  a_recycler_view_fert_view_display_activity.class);
                         startActivity(intent);
-                        break;
+                        break;*/
 
 
                     //Toast.makeText(getApplicationContext(), dataE.getOptionName() + " is selected!", Toast.LENGTH_SHORT).show();
@@ -127,16 +126,16 @@ public class a_recycler_view_fert_options_display_activity extends AppCompatActi
 
 
 
-        data = new ArrayList<d_recycler_view_fert_options_datamodel_class>();
+        data = new ArrayList<d_recycler_view_plant_options_datamodel_class>();
 
-        for (int i = 0; i < c_recycler_view_fert_options_data_storage_class.nameArray.length; i++)
+        for (int i = 0; i < c_recycler_view_plant_options_data_storage_class.nameArray.length; i++)
         {
-            data.add(new d_recycler_view_fert_options_datamodel_class( c_recycler_view_fert_options_data_storage_class.nameArray[i][0], c_recycler_view_fert_options_data_storage_class.nameArray[i][1]));
+            data.add(new d_recycler_view_plant_options_datamodel_class( c_recycler_view_plant_options_data_storage_class.nameArray[i][0], c_recycler_view_plant_options_data_storage_class.nameArray[i][1]));
         }
 
 
 
-        adapter = new b_recycler_view_fert_options_adapter_class(data,getApplicationContext());
+        adapter = new b_recycler_view_plant_options_adapter_class(data,getApplicationContext());
         recyclerView.setAdapter(adapter);
     }
 
@@ -166,10 +165,10 @@ public class a_recycler_view_fert_options_display_activity extends AppCompatActi
 
                 if(homepage_activity.TESTING_MODE)
                 {
-                    helperFunctions_class.showToast(a_recycler_view_fert_options_display_activity.this, "Inside Login Function");
+                    helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, "Inside Login Function");
                 }
-                helperFunctions_class.logOut_reset_flags(a_recycler_view_fert_options_display_activity.this);
-                Intent intent = new Intent(a_recycler_view_fert_options_display_activity.this, login_activity.class);
+                helperFunctions_class.logOut_reset_flags(a_recycler_view_plant_options_display_activity.this);
+                Intent intent = new Intent(a_recycler_view_plant_options_display_activity.this, login_activity.class);
                 startActivity(intent);
                 finish();
 

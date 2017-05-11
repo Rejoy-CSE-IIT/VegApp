@@ -1,4 +1,4 @@
-package com.geometry.vegapp.d_projectCore.ac_veg.c_recycler_view_veg_entry;
+package com.geometry.vegapp.d_projectCore.ae_plant.c_recycler_view_plant_entry;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -25,7 +25,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
-import com.geometry.vegapp.d_projectCore.ac_veg.a_recycler_view_veg_options.a_recycler_view_veg_options_display_activity;
+import com.geometry.vegapp.d_projectCore.ae_plant.a_recycler_view_plant_options.a_recycler_view_plant_options_display_activity;
 import com.geometry.vegapp.f_webPageLinks.webPageLinks_class;
 import com.geometry.vegapp.g_volley_manager.volley_connection_class;
 import com.geometry.vegapp.h_login.login_activity;
@@ -42,7 +42,7 @@ import java.util.Map;
 import id.zelory.compressor.Compressor;
 import id.zelory.compressor.FileUtil;
 
-public class vegformEntryForm extends AppCompatActivity
+public class plantformEntryForm extends AppCompatActivity
 {
 
     PinchZoomImageView_class mPinchZoomImageViewClass;
@@ -70,7 +70,7 @@ public class vegformEntryForm extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a_0_vegform_entry_form);
+        setContentView(R.layout.activity_a_0_plantform_entry_form);
 
 
         organization_ET    = (EditText)findViewById(R.id.organization_ET);
@@ -117,7 +117,7 @@ public class vegformEntryForm extends AppCompatActivity
                         details_ET.getText().toString().equals(""))
 
                 {
-                    builder=new AlertDialog.Builder(vegformEntryForm.this);
+                    builder=new AlertDialog.Builder(plantformEntryForm.this);
                     builder.setTitle("Something went wrong....");
                     builder.setMessage("please fill all the fields..");
 
@@ -141,7 +141,7 @@ public class vegformEntryForm extends AppCompatActivity
 
 
 
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getVeg_Register_URL(),
+                    StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getPlant_Register_URL(),
                             new Response.Listener<String>()
                             {
                                 @Override
@@ -151,7 +151,7 @@ public class vegformEntryForm extends AppCompatActivity
 
                                     // remember response is the sring that you sent from server open php
                                     if(homepage_activity.TESTING_MODE)
-                                        Toast.makeText(vegformEntryForm.this, response, Toast.LENGTH_LONG).show();
+                                        Toast.makeText(plantformEntryForm.this, response, Toast.LENGTH_LONG).show();
 
                                     Gson gson = new Gson();
                                     //*
@@ -165,10 +165,10 @@ public class vegformEntryForm extends AppCompatActivity
 
 
                                         //  if(homepage_activity.TESTING_MODE)
-                                        Toast.makeText(vegformEntryForm.this, "Veg Registration Successful!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(plantformEntryForm.this, "Seed Registration Successful!", Toast.LENGTH_LONG).show();
 
 
-                                        Intent intent = new Intent(vegformEntryForm.this, a_recycler_view_veg_options_display_activity.class);
+                                        Intent intent = new Intent(plantformEntryForm.this, a_recycler_view_plant_options_display_activity.class);
                                         startActivity(intent);
                                         finish();
 
@@ -179,7 +179,7 @@ public class vegformEntryForm extends AppCompatActivity
                                     else
                                     {
                                         //Toast.makeText(Register.this, "Registration  Failed", Toast.LENGTH_LONG).show();
-                                        seed_label.setText("Veg Registration Failed Try again !!");
+                                        seed_label.setText("Seed Registration Failed Try again !!");
                                     }
                                     bitmap_P=null;
                                 }
@@ -188,7 +188,7 @@ public class vegformEntryForm extends AppCompatActivity
                             {
                                 @Override
                                 public void onErrorResponse(VolleyError error) {
-                                    Toast.makeText(vegformEntryForm.this,error.toString(),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(plantformEntryForm.this,error.toString(),Toast.LENGTH_LONG).show();
                                 }
                             }){
                         @Override
@@ -279,7 +279,7 @@ public class vegformEntryForm extends AppCompatActivity
                     try
                     {
                         File actualImage;
-                        actualImage = FileUtil.from(vegformEntryForm.this, mImageUri);
+                        actualImage = FileUtil.from(plantformEntryForm.this, mImageUri);
                         bitmap_P = Compressor.getDefault(this).compressToBitmap(actualImage);
                     }
                     catch (Exception e)
@@ -342,10 +342,10 @@ public class vegformEntryForm extends AppCompatActivity
 
                 if(homepage_activity.TESTING_MODE)
                 {
-                    helperFunctions_class.showToast(vegformEntryForm.this, "Inside Login Function");
+                    helperFunctions_class.showToast(plantformEntryForm.this, "Inside Login Function");
                 }
-                helperFunctions_class.logOut_reset_flags(vegformEntryForm.this);
-                Intent intent = new Intent(vegformEntryForm.this, login_activity.class);
+                helperFunctions_class.logOut_reset_flags(plantformEntryForm.this);
+                Intent intent = new Intent(plantformEntryForm.this, login_activity.class);
                 startActivity(intent);
                 finish();
 

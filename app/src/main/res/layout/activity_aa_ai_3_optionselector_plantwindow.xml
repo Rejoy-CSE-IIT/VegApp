@@ -1,11 +1,11 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/login"
+    android:background="@drawable/bg_plant"
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".j_project_core.zzDummy.zai_3_plant.aa_ai_3_OptionSelector_plantWindow">
+    tools:context=".d_projectCore.ae_plant.a_recycler_view_plant_options.a_recycler_view_plant_options_display_activity">
 
 
     <android.support.v7.widget.Toolbar

@@ -69,6 +69,10 @@
             android:theme="@style/AppTheme.NoTitle"/>
         <activity android:name=".d_projectCore.ad_fertilizer.d_recycler_view_fert_item_view.viewFert"
             android:theme="@style/AppTheme.NoTitle"/>
+        <activity android:name=".d_projectCore.ae_plant.a_recycler_view_plant_options.a_recycler_view_plant_options_display_activity"
+            android:theme="@style/AppTheme.NoTitle"/>
+        <activity android:name=".d_projectCore.ae_plant.c_recycler_view_plant_entry.plantformEntryForm"
+            android:theme="@style/AppTheme.NoTitle"/>
 
     </application>
 

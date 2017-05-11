@@ -4,9 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/bg_plant"
 
-    tools:context=".j_project_core.zzDummy.zai_5_renewal_energey.a_0_renewalformEntryForm">
+    tools:context=".d_projectCore.ae_plant.c_recycler_view_plant_entry.plantformEntryForm">
 
 
 
@@ -191,7 +191,7 @@
                 android:hint="Enter contacts   here"
                 />
 
-            <com.geometry.vegapp.d_ImageProcessing.PinchZoomImageView_class
+            <com.geometry.vegapp.i_ImageProcessing.PinchZoomImageView_class
                 android:id="@+id/image_select_from_galley_img"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/alert_dark_frame"
@@ -201,7 +201,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
                 >
-            </com.geometry.vegapp.d_ImageProcessing.PinchZoomImageView_class>
+            </com.geometry.vegapp.i_ImageProcessing.PinchZoomImageView_class>
 
 
 
