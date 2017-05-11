@@ -91,6 +91,13 @@
         <activity android:name=".d_projectCore.ag_renewal.c_recycler_view_renewal_entry.renewalformEntryForm"
             android:theme="@style/AppTheme.NoTitle"/>
 
+        <activity android:name=".d_projectCore.af_train.b_recycler_view_train_display.a_recycler_view_train_view_display_activity"
+            android:theme="@style/AppTheme.NoTitle"/>
+        <activity android:name=".d_projectCore.ag_renewal.b_recycler_view_renewal_display.a_recycler_view_renewal_view_display_activity"
+            android:theme="@style/AppTheme.NoTitle"/>
+
+
+
     </application>
 
 </manifest>

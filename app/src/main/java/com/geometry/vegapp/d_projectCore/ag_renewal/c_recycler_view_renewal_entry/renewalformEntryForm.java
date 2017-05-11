@@ -172,7 +172,7 @@ public class renewalformEntryForm extends AppCompatActivity
                                         startActivity(intent);
                                         finish();
 
-                                        //Intent intent = new Intent(renewalformEntryForm.this, d_recycler_view_plant_view_datamodel_class.class);
+                                        //Intent intent = new Intent(renewalformEntryForm.this, d_recycler_view_train_view_datamodel_class.class);
                                         // intent.putExtra("fromReg", true);
                                         // startActivity(intent);
                                     }

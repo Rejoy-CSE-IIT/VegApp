@@ -54,17 +54,17 @@ public class webPageLinks_class
     public static  String Approval_plant_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/ab_plant/ae_plant_approval.php";
 
 
-    public static String train_Register_URL           = "http://192.168.56.1/php_secure_Code/ae_register_train_entry.VegP.php";
-    public static String trainView_URL                = "http://192.168.56.1/php_secure_Code/ae_register_train_view_VegP.php";
-    public static String rating_train_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_train_rating_approval.php";
-    public static  String Approval_train_URL           = "http://192.168.56.1/php_secure_Code/ae_train_approval.php";
-    public static  String Delete_train_URL             = "http://192.168.56.1/php_secure_Code/ae_delete_train.php";
+    public static String train_Register_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/2_train/ae_register_train_entry.VegP.php";
+    public static String trainView_URL                = "http://192.168.56.1/php_secure_Code/ServerFiles/2_train/ae_register_train_view_VegP.php";
+    public static String rating_train_Register_URL     = "http://192.168.56.1/php_secure_Code/ServerFiles/2_train/ae_train_rating_approval.php";
+    public static  String Approval_train_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/2_train/ae_train_approval.php";
+    public static  String Delete_train_URL             = "http://192.168.56.1/php_secure_Code/ServerFiles/2_train/ae_delete_train.php";
 
-    public static String renewal_Register_URL            = "http://192.168.56.1/php_secure_Code/ae_register_renewal_entry.VegP.php";
-    public static String renewalView_URL                 = "http://192.168.56.1/php_secure_Code/ae_register_renewal_view_VegP.php";
-    public static String rating_renewal_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_renewal_rating_approval.php";
-    public static  String Approval_renewal_URL           = "http://192.168.56.1/php_secure_Code/ae_renewal_approval.php";
-    public static  String Delete_renewal_URL             = "http://192.168.56.1/php_secure_Code/ae_delete_renewal.php";
+    public static String renewal_Register_URL            = "http://192.168.56.1/php_secure_Code/ServerFiles/3_renewal/ae_register_renewal_entry.VegP.php";
+    public static String renewalView_URL                 = "http://192.168.56.1/php_secure_Code/ServerFiles/3_renewal/ae_register_renewal_view_VegP.php";
+    public static String rating_renewal_Register_URL     = "http://192.168.56.1/php_secure_Code/ServerFiles/3_renewal/ae_renewal_rating_approval.php";
+    public static  String Approval_renewal_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/3_renewal/ae_renewal_approval.php";
+    public static  String Delete_renewal_URL             = "http://192.168.56.1/php_secure_Code/ServerFiles/3_renewal/ae_delete_renewal.php";
 
 
 
