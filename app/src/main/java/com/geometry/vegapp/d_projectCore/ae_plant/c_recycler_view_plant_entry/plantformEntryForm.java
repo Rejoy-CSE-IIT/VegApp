@@ -172,7 +172,7 @@ public class plantformEntryForm extends AppCompatActivity
                                         startActivity(intent);
                                         finish();
 
-                                        //Intent intent = new Intent(plantformEntryForm.this, d_recycler_view_fert_view_datamodel_class.class);
+                                        //Intent intent = new Intent(plantformEntryForm.this, d_recycler_view_plant_view_datamodel_class.class);
                                         // intent.putExtra("fromReg", true);
                                         // startActivity(intent);
                                     }

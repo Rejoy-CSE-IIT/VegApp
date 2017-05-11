@@ -138,10 +138,10 @@ public class a_recycler_view_seed_view_dsiplay_activity extends AppCompatActivit
         data = new ArrayList<d_recycler_view_seed_view_datamodel_class>();
 
         /*
-        for (int i = 0; i < c_recycler_view_fert_view_data_storage_class.nameArray.length; i++)
+        for (int i = 0; i < c_recycler_view_plant_view_data_storage_class.nameArray.length; i++)
         {
-            data.add(new d_recycler_view_fert_view_datamodel_class(
-                    c_recycler_view_fert_view_data_storage_class.nameArray[i][0], c_recycler_view_fert_view_data_storage_class.nameArray[i][1]
+            data.add(new d_recycler_view_plant_view_datamodel_class(
+                    c_recycler_view_plant_view_data_storage_class.nameArray[i][0], c_recycler_view_plant_view_data_storage_class.nameArray[i][1]
 
             ));
         }*/
@@ -174,7 +174,7 @@ public class a_recycler_view_seed_view_dsiplay_activity extends AppCompatActivit
                 String text=null;
                 String Dummy="";
 
-                // helperFunctions_class.showToast(a_recycler_view_fert_view_display_activity.this," ##"+query);
+                // helperFunctions_class.showToast(a_recycler_view_plant_view_display_activity.this," ##"+query);
 
 
                 for (int i = 0; i < data.size(); i++)
@@ -209,7 +209,7 @@ public class a_recycler_view_seed_view_dsiplay_activity extends AppCompatActivit
                         {
                             data.get(i).setDisableview(false);
                             // search_D.setText(query+"::"+data.get(i).getOrganization());
-                           /* helperFunctions_class.showToast(a_recycler_view_fert_view_display_activity.this,""+data.get(i).getOrganization()
+                           /* helperFunctions_class.showToast(a_recycler_view_plant_view_display_activity.this,""+data.get(i).getOrganization()
                                     +"##"+query
                             );*/
                         }
@@ -217,7 +217,7 @@ public class a_recycler_view_seed_view_dsiplay_activity extends AppCompatActivit
                         {
                             data.get(i).setDisableview(true);
                             //  search_D.setText(query+"::"+"no Item");
-                            //   helperFunctions_class.showToast(a_recycler_view_fert_view_display_activity.this,"search failed"
+                            //   helperFunctions_class.showToast(a_recycler_view_plant_view_display_activity.this,"search failed"
                             // );
                         }
 

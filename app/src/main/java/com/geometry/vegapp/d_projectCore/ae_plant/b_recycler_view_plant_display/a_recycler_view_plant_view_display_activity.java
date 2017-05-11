@@ -1,4 +1,4 @@
-package com.geometry.vegapp.d_projectCore.ac_veg.b_recycler_view_veg_display;
+package com.geometry.vegapp.d_projectCore.ae_plant.b_recycler_view_plant_display;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,7 +25,7 @@ import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
-import com.geometry.vegapp.d_projectCore.ac_veg.d_veg_item_view.viewVeg;
+import com.geometry.vegapp.d_projectCore.ae_plant.d_recycler_view_plant_item_view.viewPlant;
 import com.geometry.vegapp.f_webPageLinks.webPageLinks_class;
 import com.geometry.vegapp.g_volley_manager.volley_connection_class;
 import com.geometry.vegapp.h_login.login_activity;
@@ -39,13 +39,13 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
+public class a_recycler_view_plant_view_display_activity extends AppCompatActivity
 {
 
     private static RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private static RecyclerView recyclerView;
-    private static ArrayList<d_recycler_view_veg_view_datamodel_class> data;
+    private static ArrayList<d_recycler_view_plant_view_datamodel_class> data;
     static View.OnClickListener myOnClickListener;
     private static ArrayList<Integer> removedItems;
     public EditText search;
@@ -82,10 +82,10 @@ public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
             @Override
             public void onClick(View view, int position)
             {
-                d_recycler_view_veg_view_datamodel_class dataE = data.get(position);
+                d_recycler_view_plant_view_datamodel_class dataE = data.get(position);
 
 
-                Intent intent = new Intent(a_recycler_view_veg_view_display_activity.this, viewVeg.class);
+                Intent intent = new Intent(a_recycler_view_plant_view_display_activity.this, viewPlant.class);
 
 
 
@@ -136,7 +136,7 @@ public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
 
 
 
-        data = new ArrayList<d_recycler_view_veg_view_datamodel_class>();
+        data = new ArrayList<d_recycler_view_plant_view_datamodel_class>();
 
         /*
         for (int i = 0; i < c_recycler_view_plant_view_data_storage_class.nameArray.length; i++)
@@ -148,7 +148,7 @@ public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
         }*/
 
 
-        adapter = new b_recycler_view_veg_view_adapter_class(data,getApplicationContext(),this);
+        adapter = new b_recycler_view_plant_view_adapter_class(data,getApplicationContext(),this);
         recyclerView.setAdapter(adapter);
 
 
@@ -282,7 +282,7 @@ public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
 
     void getDataFromServer()
     {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getVegView_URL(),
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getPlantView_URL(),
                 new Response.Listener<String>()
                 {
                     @Override
@@ -325,7 +325,7 @@ public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
                                 // int approved=0;
 
 
-                                data.add(new d_recycler_view_veg_view_datamodel_class(
+                                data.add(new d_recycler_view_plant_view_datamodel_class(
                                         organization,   category,   details,   image,   place,
                                         contacts,   price,   userid,   id,   approval,   mobno,false,rating
 
@@ -353,7 +353,7 @@ public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
                     @Override
                     public void onErrorResponse(VolleyError error)
                     {
-                        Toast.makeText(a_recycler_view_veg_view_display_activity.this,error.toString(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(a_recycler_view_plant_view_display_activity.this,error.toString(),Toast.LENGTH_LONG).show();
                     }
                 }){
             @Override
@@ -393,10 +393,10 @@ public class a_recycler_view_veg_view_display_activity extends AppCompatActivity
 
                 if(homepage_activity.TESTING_MODE)
                 {
-                    helperFunctions_class.showToast(a_recycler_view_veg_view_display_activity.this, "Inside Login Function");
+                    helperFunctions_class.showToast(a_recycler_view_plant_view_display_activity.this, "Inside Login Function");
                 }
-                helperFunctions_class.logOut_reset_flags(a_recycler_view_veg_view_display_activity.this);
-                Intent intent = new Intent(a_recycler_view_veg_view_display_activity.this, login_activity.class);
+                helperFunctions_class.logOut_reset_flags(a_recycler_view_plant_view_display_activity.this);
+                Intent intent = new Intent(a_recycler_view_plant_view_display_activity.this, login_activity.class);
                 startActivity(intent);
                 finish();
 

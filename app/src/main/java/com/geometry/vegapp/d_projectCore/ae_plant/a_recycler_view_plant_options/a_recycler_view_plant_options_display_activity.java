@@ -17,6 +17,7 @@ import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
+import com.geometry.vegapp.d_projectCore.ae_plant.b_recycler_view_plant_display.a_recycler_view_plant_view_display_activity;
 import com.geometry.vegapp.d_projectCore.ae_plant.c_recycler_view_plant_entry.plantformEntryForm;
 import com.geometry.vegapp.h_login.login_activity;
 
@@ -62,12 +63,12 @@ public class a_recycler_view_plant_options_display_activity extends AppCompatAct
             @Override
             public void onClick(View view, int position)
             {
-                // d_recycler_view_fert_view_datamodel_class dataE = data.get(position);
+                // d_recycler_view_plant_view_datamodel_class dataE = data.get(position);
                 //Toast.makeText(getApplicationContext(), dataE.getOptionName() + " is selected!", Toast.LENGTH_SHORT).show();
                 // Toast.makeText(getApplicationContext(),   " is selected!", Toast.LENGTH_SHORT).show();
-                //   Intent intent = new Intent(OptionSelector_MainWindow.this, a_recycler_view_fert_view_display_activity.class);
+                //   Intent intent = new Intent(OptionSelector_MainWindow.this, a_recycler_view_plant_view_display_activity.class);
                 //  startActivity(intent);
-                //Intent intent = new Intent(OptionSelector_MainWindow.this, a_recycler_view_fert_view_display_activity.class);
+                //Intent intent = new Intent(OptionSelector_MainWindow.this, a_recycler_view_plant_view_display_activity.class);
                 //    startActivity(intent);
                 // finish();
 
@@ -108,10 +109,10 @@ public class a_recycler_view_plant_options_display_activity extends AppCompatAct
 
                     case "View Plant List":
                           helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, "Clciked View Veg");
-/*
-                    Intent  intent = new Intent(a_recycler_view_plant_options_display_activity.this,  a_recycler_view_fert_view_display_activity.class);
+
+                    Intent  intent = new Intent(a_recycler_view_plant_options_display_activity.this,  a_recycler_view_plant_view_display_activity.class);
                         startActivity(intent);
-                        break;*/
+                        break;
 
 
                     //Toast.makeText(getApplicationContext(), dataE.getOptionName() + " is selected!", Toast.LENGTH_SHORT).show();

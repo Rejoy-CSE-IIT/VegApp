@@ -63,12 +63,12 @@ public class a_recycler_view_veg_options_display_activity extends AppCompatActiv
             @Override
             public void onClick(View view, int position)
             {
-                // d_recycler_view_fert_view_datamodel_class dataE = data.get(position);
+                // d_recycler_view_plant_view_datamodel_class dataE = data.get(position);
                 //Toast.makeText(getApplicationContext(), dataE.getOptionName() + " is selected!", Toast.LENGTH_SHORT).show();
                 // Toast.makeText(getApplicationContext(),   " is selected!", Toast.LENGTH_SHORT).show();
-                //   Intent intent = new Intent(OptionSelector_MainWindow.this, a_recycler_view_fert_view_display_activity.class);
+                //   Intent intent = new Intent(OptionSelector_MainWindow.this, a_recycler_view_plant_view_display_activity.class);
                 //  startActivity(intent);
-                //Intent intent = new Intent(OptionSelector_MainWindow.this, a_recycler_view_fert_view_display_activity.class);
+                //Intent intent = new Intent(OptionSelector_MainWindow.this, a_recycler_view_plant_view_display_activity.class);
                 //    startActivity(intent);
                 // finish();
 

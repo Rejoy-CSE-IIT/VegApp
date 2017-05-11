@@ -4,8 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
-    tools:context=".j_project_core.zzDummy.zai_5_renewal_energey.a_5_renewal_level_0.a1_recylerviewdetails.viewrenewal">
+    android:background="@drawable/bg_plant"
+    tools:context=".d_projectCore.ae_plant.d_recycler_view_plant_item_view.viewPlant">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Details of Plant  Advt"
+                android:text="Details of Seed Post"
                 android:textColor="@color/textColor"
                 android:id="@+id/seedlabel"
 
@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Vendor"
+                android:text="Organization"
                 android:textColor="@color/textColor"
                 android:textSize="18dp"
 
@@ -57,7 +57,7 @@
                 android:textColor="@color/textColor"
                 android:id="@+id/organization_ET"
                 android:background="@drawable/patched_button"
-                android:hint="Enter Agency name  here" />
+                android:hint="Enter organization name  here" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -193,19 +193,66 @@
                 android:hint="Enter contacts   here"
                 />
 
-            <ImageView
 
-
-                android:id="@+id/image_select_from_galley_img"
-                android:layout_height="match_parent"
-                app:srcCompat="@android:drawable/alert_dark_frame"
-                android:layout_centerInParent="true"
-
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
 
-                />
+                <ImageView android:layout_width="wrap_content"
+                    android:id="@+id/image_select_from_galley_img"
+                    android:background="@drawable/patched_button"
+
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/alert_dark_frame"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/patched_button"
+                android:id="@+id/ratesystem">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#dcb021"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="0dp"
+
+
+                    android:textAlignment="center"
+                    android:layout_weight=".75"
+                    />
+
+                <Button
+                    android:id="@+id/rateB"
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ratingBar1"
+                    android:layout_marginTop="0dp"
+                    android:paddingLeft="3dp"
+                    android:layout_weight=".25"
+                    android:layout_width="0dp"
+                    android:background="@drawable/button_bg_round_1"
+
+                    android:text="Rate" />
+
+            </LinearLayout>
 
 
 
