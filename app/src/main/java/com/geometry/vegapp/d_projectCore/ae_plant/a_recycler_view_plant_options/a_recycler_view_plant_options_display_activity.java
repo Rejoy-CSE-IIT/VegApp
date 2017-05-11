@@ -78,7 +78,7 @@ public class a_recycler_view_plant_options_display_activity extends AppCompatAct
                 if(homepage_activity.TESTING_MODE)
                     helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, dataE.getOptionName());
 
-                //   helperFunctions_class.showToast(a_recycler_view_plant_options_display_activity.this, dataE.getOptionName()+":"+homepage_activity.user_mode);
+                //   helperFunctions_class.showToast(a_recycler_view_train_options_display_activity.this, dataE.getOptionName()+":"+homepage_activity.user_mode);
 
                 switch(dataE.getOptionName())
                 {

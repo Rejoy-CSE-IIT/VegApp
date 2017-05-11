@@ -1,13 +1,13 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/login"
+    android:background="@drawable/rw_back"
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".j_project_core.zzDummy.zai_5_renewal_energey.aa_ai_5_OptionSelector_rnwWindow">
+    tools:context=".d_projectCore.ag_renewal.a_recycler_view_renewal_options.a_recycler_view_renewal_options_display_activity">
 
-    <android.support.v7.widget.Toolbar
+<android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
 
         android:layout_width="match_parent"

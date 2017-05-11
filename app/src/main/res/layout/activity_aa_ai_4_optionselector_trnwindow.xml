@@ -1,11 +1,12 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/login"
+    android:background="@drawable/train_bg"
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".j_project_core.zzDummy.zai_4_Training.aa_ai_4_OptionSelector_trnWindow">
+     tools:context=".d_projectCore.af_train.a_recycler_view_train_options.a_recycler_view_train_options_display_activity">
+     >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

@@ -78,6 +78,13 @@
         <activity android:name=".d_projectCore.ae_plant.d_recycler_view_plant_item_view.viewPlant"
             android:theme="@style/AppTheme.NoTitle"/>
 
+        <activity android:name=".d_projectCore.af_train.a_recycler_view_train_options.a_recycler_view_train_options_display_activity"
+            android:theme="@style/AppTheme.NoTitle"/>
+
+
+        <activity android:name=".d_projectCore.ag_renewal.a_recycler_view_renewal_options.a_recycler_view_renewal_options_display_activity"
+            android:theme="@style/AppTheme.NoTitle"/>
+
     </application>
 
 </manifest>

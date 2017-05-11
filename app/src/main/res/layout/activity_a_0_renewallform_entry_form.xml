@@ -4,9 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/rw_back"
 
-    tools:context=".j_project_core.zzDummy.zai_5_renewal_energey.a_0_renewalformEntryForm">
+    tools:context=".d_projectCore.ag_renewal.a_recycler_view_renewal_options.a_recycler_view_renewal_options_display_activity">
 
 
 
