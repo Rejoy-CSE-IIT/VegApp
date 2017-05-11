@@ -54,13 +54,21 @@ public class webPageLinks_class
     public static  String Approval_plant_URL           = "http://192.168.56.1/php_secure_Code/ServerFiles/ab_plant/ae_plant_approval.php";
 
 
+    public static String train_Register_URL           = "http://192.168.56.1/php_secure_Code/ae_register_train_entry.VegP.php";
+    public static String trainView_URL                = "http://192.168.56.1/php_secure_Code/ae_register_train_view_VegP.php";
+    public static String rating_train_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_train_rating_approval.php";
+    public static  String Approval_train_URL           = "http://192.168.56.1/php_secure_Code/ae_train_approval.php";
+    public static  String Delete_train_URL             = "http://192.168.56.1/php_secure_Code/ae_delete_train.php";
 
-    public static String trainView_URL   = "http://192.168.56.1/php_secure_Code/ae_register_train_view_VegP.php";
-    public static String renewalView_URL = "http://192.168.56.1/php_secure_Code/ae_register_renewal_view_VegP.php";
+    public static String renewal_Register_URL            = "http://192.168.56.1/php_secure_Code/ae_register_renewal_entry.VegP.php";
+    public static String renewalView_URL                 = "http://192.168.56.1/php_secure_Code/ae_register_renewal_view_VegP.php";
+    public static String rating_renewal_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_renewal_rating_approval.php";
+    public static  String Approval_renewal_URL           = "http://192.168.56.1/php_secure_Code/ae_renewal_approval.php";
+    public static  String Delete_renewal_URL             = "http://192.168.56.1/php_secure_Code/ae_delete_renewal.php";
 
 
-     public static String train_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_train_entry.VegP.php";
-    public static String renewal_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_register_renewal_entry.VegP.php";
+
+
 
     public static String getRating_seed_Register_URL() {
         return rating_seed_Register_URL;
@@ -113,8 +121,6 @@ public class webPageLinks_class
 
 
 
-    public static String rating_renewal_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_renewal_rating_approval.php";
-    public static String rating_train_Register_URL     = "http://192.168.56.1/php_secure_Code/ae_train_rating_approval.php";
 
 
 
@@ -276,10 +282,6 @@ public class webPageLinks_class
     public static void setDelete_renewal_URL(String delete_renewal_URL) {
         Delete_renewal_URL = delete_renewal_URL;
     }
-     public static  String Approval_train_URL = "http://192.168.56.1/php_secure_Code/ae_train_approval.php";
-     public static  String Approval_renewal_URL = "http://192.168.56.1/php_secure_Code/ae_renewal_approval.php";
-      public static  String Delete_train_URL = "http://192.168.56.1/php_secure_Code/ae_delete_train.php";
-    public static  String Delete_renewal_URL = "http://192.168.56.1/php_secure_Code/ae_delete_renewal.php";
 
 
 

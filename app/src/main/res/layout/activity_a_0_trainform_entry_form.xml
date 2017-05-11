@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Traning Agency Register Form"
+                android:text="Traning Entry Form"
                 android:textColor="@color/textColor"
                 android:id="@+id/seedlabel"
 
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Registered name of the agency"
+                android:text="Organization"
                 android:textColor="@color/textColor"
                 android:textSize="18dp"
 
@@ -60,12 +60,12 @@
                 android:background="@drawable/patched_button"
                 android:textColor="@color/textColor"
                 android:id="@+id/organization_ET"
-                android:hint="Enter agency name  here" />
+                android:hint="Enter organization name  here" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fee"
+                android:text="Course"
                 android:textColor="@color/textColor"
                 android:textSize="18dp"
                 android:id="@+id/price_label"
@@ -80,13 +80,13 @@
                 android:background="@drawable/patched_button"
                 android:textColor="@color/textColor"
                 android:id="@+id/price_ET"
-                android:hint="Enter Fee  Here"
+                android:hint="Enter Course Here"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="domain"
+                android:text="Category"
                 android:textColor="@color/textColor"
                 android:textSize="18dp"
                 android:id="@+id/category_label"
@@ -101,7 +101,7 @@
                 android:background="@drawable/patched_button"
                 android:textColor="@color/textColor"
                 android:id="@+id/category_ET"
-                android:hint="Enter domain Here"
+                android:hint="Enter Category Here"
                 />
             <TextView
                 android:layout_width="match_parent"
@@ -143,7 +143,7 @@
                 android:background="@drawable/patched_button"
                 android:textColor="@color/textColor"
                 android:id="@+id/place_ET"
-                android:hint="Enter Details Here"
+                android:hint="Enter Place Here"
                 />
 
 

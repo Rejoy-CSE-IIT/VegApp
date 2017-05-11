@@ -1,4 +1,4 @@
-package com.geometry.vegapp.d_projectCore.ad_fertilizer.c_recycler_view_fert_entry;
+package com.geometry.vegapp.d_projectCore.ag_renewal.c_recycler_view_renewal_entry;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -25,7 +25,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.geometry.vegapp.R;
 import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
-import com.geometry.vegapp.d_projectCore.ad_fertilizer.a_recycler_view_fert_options.a_recycler_view_fert_options_display_activity;
+import com.geometry.vegapp.d_projectCore.ag_renewal.a_recycler_view_renewal_options.a_recycler_view_renewal_options_display_activity;
 import com.geometry.vegapp.f_webPageLinks.webPageLinks_class;
 import com.geometry.vegapp.g_volley_manager.volley_connection_class;
 import com.geometry.vegapp.h_login.login_activity;
@@ -42,7 +42,7 @@ import java.util.Map;
 import id.zelory.compressor.Compressor;
 import id.zelory.compressor.FileUtil;
 
-public class fertformEntryForm extends AppCompatActivity
+public class renewalformEntryForm extends AppCompatActivity
 {
 
     PinchZoomImageView_class mPinchZoomImageViewClass;
@@ -70,7 +70,7 @@ public class fertformEntryForm extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a_0_fertform_entry_form);
+        setContentView(R.layout.activity_a_0_renewallform_entry_form);
 
 
         organization_ET    = (EditText)findViewById(R.id.organization_ET);
@@ -117,7 +117,7 @@ public class fertformEntryForm extends AppCompatActivity
                         details_ET.getText().toString().equals(""))
 
                 {
-                    builder=new AlertDialog.Builder(fertformEntryForm.this);
+                    builder=new AlertDialog.Builder(renewalformEntryForm.this);
                     builder.setTitle("Something went wrong....");
                     builder.setMessage("please fill all the fields..");
 
@@ -141,7 +141,7 @@ public class fertformEntryForm extends AppCompatActivity
 
 
 
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getFert_Register_URL(),
+                    StringRequest stringRequest = new StringRequest(Request.Method.POST, webPageLinks_class.getRenewal_Register_URL(),
                             new Response.Listener<String>()
                             {
                                 @Override
@@ -151,7 +151,7 @@ public class fertformEntryForm extends AppCompatActivity
 
                                     // remember response is the sring that you sent from server open php
                                     if(homepage_activity.TESTING_MODE)
-                                        Toast.makeText(fertformEntryForm.this, response, Toast.LENGTH_LONG).show();
+                                        Toast.makeText(renewalformEntryForm.this, response, Toast.LENGTH_LONG).show();
 
                                     Gson gson = new Gson();
                                     //*
@@ -165,10 +165,10 @@ public class fertformEntryForm extends AppCompatActivity
 
 
                                         //  if(homepage_activity.TESTING_MODE)
-                                        Toast.makeText(fertformEntryForm.this, "fert Registration Successful!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(renewalformEntryForm.this, "Seed Registration Successful!", Toast.LENGTH_LONG).show();
 
 
-                                        Intent intent = new Intent(fertformEntryForm.this, a_recycler_view_fert_options_display_activity.class);
+                                        Intent intent = new Intent(renewalformEntryForm.this, a_recycler_view_renewal_options_display_activity.class);
                                         startActivity(intent);
                                         finish();
 
@@ -179,7 +179,7 @@ public class fertformEntryForm extends AppCompatActivity
                                     else
                                     {
                                         //Toast.makeText(Register.this, "Registration  Failed", Toast.LENGTH_LONG).show();
-                                        seed_label.setText("Plant Registration Failed Try again !!");
+                                        seed_label.setText("Renewal Registration Failed Try again !!");
                                     }
                                     bitmap_P=null;
                                 }
@@ -188,7 +188,7 @@ public class fertformEntryForm extends AppCompatActivity
                             {
                                 @Override
                                 public void onErrorResponse(VolleyError error) {
-                                    Toast.makeText(fertformEntryForm.this,error.toString(),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(renewalformEntryForm.this,error.toString(),Toast.LENGTH_LONG).show();
                                 }
                             }){
                         @Override
@@ -279,7 +279,7 @@ public class fertformEntryForm extends AppCompatActivity
                     try
                     {
                         File actualImage;
-                        actualImage = FileUtil.from(fertformEntryForm.this, mImageUri);
+                        actualImage = FileUtil.from(renewalformEntryForm.this, mImageUri);
                         bitmap_P = Compressor.getDefault(this).compressToBitmap(actualImage);
                     }
                     catch (Exception e)
@@ -342,10 +342,10 @@ public class fertformEntryForm extends AppCompatActivity
 
                 if(homepage_activity.TESTING_MODE)
                 {
-                    helperFunctions_class.showToast(fertformEntryForm.this, "Inside Login Function");
+                    helperFunctions_class.showToast(renewalformEntryForm.this, "Inside Login Function");
                 }
-                helperFunctions_class.logOut_reset_flags(fertformEntryForm.this);
-                Intent intent = new Intent(fertformEntryForm.this, login_activity.class);
+                helperFunctions_class.logOut_reset_flags(renewalformEntryForm.this);
+                Intent intent = new Intent(renewalformEntryForm.this, login_activity.class);
                 startActivity(intent);
                 finish();
 

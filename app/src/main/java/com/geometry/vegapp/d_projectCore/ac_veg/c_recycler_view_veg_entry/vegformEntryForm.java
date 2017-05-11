@@ -172,7 +172,7 @@ public class vegformEntryForm extends AppCompatActivity
                                         startActivity(intent);
                                         finish();
 
-                                        //Intent intent = new Intent(plantformEntryForm.this, d_recycler_view_plant_view_datamodel_class.class);
+                                        //Intent intent = new Intent(renewalformEntryForm.this, d_recycler_view_plant_view_datamodel_class.class);
                                         // intent.putExtra("fromReg", true);
                                         // startActivity(intent);
                                     }
@@ -266,12 +266,12 @@ public class vegformEntryForm extends AppCompatActivity
 
                 if(mImageUri==null)
                 {
-                    // utilClass.getToast("NULL",plantformEntryForm.this);
+                    // utilClass.getToast("NULL",renewalformEntryForm.this);
                 }
                 else
                 {
 
-                    //   utilClass.getToast("NOT NULL",plantformEntryForm.this);
+                    //   utilClass.getToast("NOT NULL",renewalformEntryForm.this);
 
                     mPinchZoomImageViewClass.setVisibility(View.VISIBLE);
                     mPinchZoomImageViewClass.setImageUri(mImageUri, 0);

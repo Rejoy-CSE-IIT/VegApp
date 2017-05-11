@@ -18,7 +18,7 @@ import com.geometry.vegapp.b_homepage.homepage_activity;
 import com.geometry.vegapp.c_utility_functions.helperFunctions_class;
 import com.geometry.vegapp.c_utility_functions.recyclerTouchListener_class;
 import com.geometry.vegapp.d_projectCore.ae_plant.b_recycler_view_plant_display.a_recycler_view_plant_view_display_activity;
-import com.geometry.vegapp.d_projectCore.ae_plant.c_recycler_view_plant_entry.plantformEntryForm;
+import com.geometry.vegapp.d_projectCore.ag_renewal.c_recycler_view_renewal_entry.renewalformEntryForm;
 import com.geometry.vegapp.h_login.login_activity;
 
 import java.util.ArrayList;
@@ -82,7 +82,7 @@ public class a_recycler_view_renewal_options_display_activity extends AppCompatA
 
                 switch(dataE.getOptionName())
                 {
-                    case "Post Plant Details":
+                    case "Post Renewal Details":
 
 
 
@@ -95,7 +95,7 @@ public class a_recycler_view_renewal_options_display_activity extends AppCompatA
                         else
                         {
 
-                            Intent intent = new Intent(a_recycler_view_renewal_options_display_activity.this, plantformEntryForm.class);
+                            Intent intent = new Intent(a_recycler_view_renewal_options_display_activity.this, renewalformEntryForm.class);
                             startActivity(intent);
 
 
@@ -107,7 +107,7 @@ public class a_recycler_view_renewal_options_display_activity extends AppCompatA
                         }
                         break;
 
-                    case "View Plant List":
+                    case "View Renewal List":
                           helperFunctions_class.showToast(a_recycler_view_renewal_options_display_activity.this, "Clciked View Veg");
 
                     Intent  intent = new Intent(a_recycler_view_renewal_options_display_activity.this,  a_recycler_view_plant_view_display_activity.class);

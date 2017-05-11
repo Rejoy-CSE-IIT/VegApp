@@ -85,6 +85,12 @@
         <activity android:name=".d_projectCore.ag_renewal.a_recycler_view_renewal_options.a_recycler_view_renewal_options_display_activity"
             android:theme="@style/AppTheme.NoTitle"/>
 
+        <activity android:name=".d_projectCore.af_train.c_recycler_view_train_entry.trainformEntryForm"
+            android:theme="@style/AppTheme.NoTitle"/>
+
+        <activity android:name=".d_projectCore.ag_renewal.c_recycler_view_renewal_entry.renewalformEntryForm"
+            android:theme="@style/AppTheme.NoTitle"/>
+
     </application>
 
 </manifest>

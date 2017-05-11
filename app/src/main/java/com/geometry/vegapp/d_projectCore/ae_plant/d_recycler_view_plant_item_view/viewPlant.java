@@ -333,7 +333,7 @@ public class viewPlant extends AppCompatActivity
                                 {
                                     Toast.makeText(viewPlant.this, "deleted", Toast.LENGTH_LONG).show();
 
-                                    // Intent intent = new Intent(plantformEntryForm.this, optionDataModel_seed.class);
+                                    // Intent intent = new Intent(renewalformEntryForm.this, optionDataModel_seed.class);
                                     // intent.putExtra("fromReg", true);
                                     // startActivity(intent);
 
